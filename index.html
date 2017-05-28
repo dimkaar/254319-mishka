@@ -6,56 +6,62 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="slim-section slim-section--white">
+      <section class="slim-block slim-block--white">
         <nav class="main-header__nav">
           <ul class="main-header__nav-list">
             <li class="main-header__nav-item">
-              <a class="section-slim main-header__nav-link" href="#">Каталог товаров</a>
+              <a class="block-slim main-header__nav-link" href="#">Каталог товаров</a>
             </li>
             <li class="main-header__nav-item">
-              <a class="section-slim main-header__nav-link" href="#">Вязание на заказ</a>
+              <a class="block-slim main-header__nav-link" href="#">Вязание на заказ</a>
             </li>
             <li class="main-header__nav-item">
-              <a class="section-slim main-header__nav-link main-header__nav-link--search-logo" href="#">Поиск по сайту</a>
+              <a class="block-slim main-header__nav-link main-header__nav-link--search-logo" href="#">Поиск по сайту</a>
             </li>
             <li class="main-header__nav-item">
-              <a class="section-slim main-header__nav-link main-header__nav-link--cart-logo" href="#">Корзина: пока пуста</a>
+              <a class="block-slim main-header__nav-link main-header__nav-link--cart-logo" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
       </section>
 
-      <section class="desc-section">
+      <section class="desc-block">
         <h2 class="second-header product-types--lamp-img">Милые штуки ручной работы для дома</h2>
         <section class="product-types product-types--light-green">
-          <h3 class="third-header">Предметы интерьера</h3>
+          <p class="product-types__text">Предметы интерьера</p>
         </section>
 
         <section class="product-types product-types--green product-types--cube-img">
-          <h3 class="third-header">Детские игрушки</h3>
+          <p class="product-types__text">Детские игрушки</p>
         </section>
       </section>
     </header>
 
     <main>
-      <article class="product-article long-section long-section--cut-border">
+      <article class="product-article long-block long-block--cut-border">
         <h2 class="second-header">Вязаные корзинки</h2>
         <b class="product-article__promo-text">Товар недели</b>
-        <p class="product-article__paragraph">
+        <p class="product-article__text">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>product-article
+        </p>
         <div class="table-block">
           <p class="table-block__row">
-            <span class="table-block__cell">Цвет:</span>
-            <span class="table-block__cell">«Тиффани»/серый</span>
+            <span class="table-block__cell product-article__cell product-article__cell--grey-underline">
+              Цвет:</span>
+            <span class="table-block__cell product-article__cell product-article__cell--grey-underline">
+              «Тиффани»/серый</span>
           </p>
           <p class="table-block__row">
-            <span class="table-block__cell">Диаметр</span>
-            <span class="table-block__cell">25 см</span>
+            <span class="table-block__cell product-article__cell product-article__cell--grey-underline">
+              Диаметр</span>
+            <span class="table-block__cell product-article__cell product-article__cell--grey-underline">
+              25 см</span>
           </p>
           <p class="table-block__row">
-            <span class="table-block__cell">Высота</span>
-            <span class="table-block__cell">15 см</span>
+            <span class="table-block__cell product-article__cell product-article__cell--grey-underline">
+              Высота</span>
+            <span class="table-block__cell product-article__cell product-article__cell--grey-underline">
+              15 см</span>
           </p>
         </div>
         <figure class="image-block">
@@ -65,45 +71,61 @@
         <a class="btn product-article__btn" href="#">Заказать</a>
       </article>
 
-      <section class="long-section about-section">
+      <section class="long-block about-block">
         <h2 class="second-header">Коротко о нас:</h2>
-        <p class="about-section__text about-section__text--flower-logo">
+        <p class="about-block__text about-block__text--flower-logo">
           Экологически  чистые материалы</p>
-        <p class="about-section__text about-section__text--money-logo">
+        <p class="about-block__text about-block__text--money-logo">
           Скандинавский стиль  по российской цене</p>
-        <p class="about-section__text about-section__text--heart-logo">
+        <p class="about-block__text about-block__text--heart-logo">
           Увеличивает лайки на фотографиях</p>
-        <p class="about-section__text about-section__text--clew-logo">
+        <p class="about-block__text about-block__text--clew-logo">
           Связано вручную с  любовью и умилением</p>
-        <p class="about-section__text about-section__text--rocket-logo">
+        <p class="about-block__text about-block__text--rocket-logo">
           Поддержка отечественного производителя</p>
-        <p class="about-section__text about-section__text--gift-logo">
+        <p class="about-block__text about-block__text--gift-logo">
           Поставляется в  подарочной упаковке</p>
       </section>
 
-      <section class="long-section long-section--cut-border review-section">
+      <section class="long-block long-block--cut-border review-block">
         <h2 class="second-header">Отзывы</h2>
-        <p class="review-section__text">
+        <p class="review-block__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
           фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
-        <a class="review-section__author-link" href="#">Анастасия Красильникова
-          <p class="review-section__author-nick">@misssssiskras</p>
+        <a class="review-block__author-link" href="#">Анастасия Красильникова
+          <p class="review-block__author-nick">@misssssiskras</p>
         </a>
-        <button class="btn review-section__btn review-section__btn--left" type="button">Предыдущий</button>
-        <button class="btn review-section__btn review-section__btn--right" type="button">Следующий</button>
-        <a class="btn review-section__btn  review-section__btn--new-review" href="#">Написать</a>
+        <button class="btn review-block__btn review-block__btn--left" type="button">Предыдущий</button>
+        <button class="btn review-block__btn review-block__btn--right" type="button">Следующий</button>
+        <a class="btn review-block__btn" href="#">Написать</a>
+      </section>
+
+      <section class="long-block contacts-block">
+        <h3 class="third-header">Контакты</h3>
+        <div class="table-block">
+          <p class="table-block__row">
+            <span class="table-block__cell contacts-block__cell">Цвет:</span>
+            <span class="table-block__cell contacts-block__cell contacts-block__cell--mint-underline">«Тиффани»/серый</span>
+          </p>
+          <p class="table-block__row">
+            <span class="table-block__cell contacts-block__cell">Диаметр</span>
+            <span class="table-block__cell contacts-block__cell">25 см</span>
+          </p>
+        </div>
+        <div class="map-block"></div>
+        <a class="btn contacts-block__btn" href="#">Напишите нам</a>
       </section>
     </main>
 
     <footer class="main-footer">
-      <section class="slim-section slim-section--grey footer-social">
+      <section class="slim-block slim-block--grey footer-social">
         <a class="footer-social__social-btn footer-social__social-btn--inst" href="#">Instagram</a>
         <a class="footer-social__social-btn footer-social__social-btn--fb" href="#">Facebook</a>
         <a class="footer-social__social-btn footer-social__social-btn--tw" href="#">Twitter</a>
       </section>
-      <section class="slim-section slim-section--grey">
+      <section class="slim-block slim-block--grey">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
         </a>
