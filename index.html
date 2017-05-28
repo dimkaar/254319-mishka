@@ -7,28 +7,30 @@
   <body>
     <header class="main-header">
       <section class="slim-section slim-section--white">
-        <div class="main-header__menu">
-          <ul class="main-header__menu-list">
-            <li class="main-header__menu-item">
-              <a class="section-slim main-header__menu-link" href="#">Каталог товаров</a>
+        <nav class="main-header__nav">
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a class="section-slim main-header__nav-link" href="#">Каталог товаров</a>
             </li>
-            <li class="main-header__menu-item">
-              <a class="section-slim main-header__menu-link" href="#">Вязание на заказ</a>
+            <li class="main-header__nav-item">
+              <a class="section-slim main-header__nav-link" href="#">Вязание на заказ</a>
             </li>
-            <li class="main-header__menu-item">
-              <a class="section-slim main-header__menu-link main-header__menu-link--search-logo" href="#">Поиск по сайту</a>
+            <li class="main-header__nav-item">
+              <a class="section-slim main-header__nav-link main-header__nav-link--search-logo" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-header__menu-item">
-              <a class="section-slim main-header__menu-link main-header__menu-link--cart-logo" href="#">Корзина: пока пуста</a>
+            <li class="main-header__nav-item">
+              <a class="section-slim main-header__nav-link main-header__nav-link--cart-logo" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </section>
+
       <section class="desc-section">
         <h2 class="second-header product-types--lamp-img">Милые штуки ручной работы для дома</h2>
         <section class="product-types product-types--light-green">
           <h3 class="third-header">Предметы интерьера</h3>
         </section>
+
         <section class="product-types product-types--green product-types--cube-img">
           <h3 class="third-header">Детские игрушки</h3>
         </section>
@@ -60,8 +62,39 @@
           <img class="image-block__img" src="http://placehold.it/100x150" alt="Изображение товара" width="100" height="150">
           <figcaption class="image-block__img-text">Цена: 990 руб.</figcaption>
         </figure>
-        <a class="btn product-article__buy-btn" href="#">Заказать</a>
+        <a class="btn product-article__btn" href="#">Заказать</a>
       </article>
+
+      <section class="long-section about-section">
+        <h2 class="second-header">Коротко о нас:</h2>
+        <p class="about-section__text about-section__text--flower-logo">
+          Экологически  чистые материалы</p>
+        <p class="about-section__text about-section__text--money-logo">
+          Скандинавский стиль  по российской цене</p>
+        <p class="about-section__text about-section__text--heart-logo">
+          Увеличивает лайки на фотографиях</p>
+        <p class="about-section__text about-section__text--clew-logo">
+          Связано вручную с  любовью и умилением</p>
+        <p class="about-section__text about-section__text--rocket-logo">
+          Поддержка отечественного производителя</p>
+        <p class="about-section__text about-section__text--gift-logo">
+          Поставляется в  подарочной упаковке</p>
+      </section>
+
+      <section class="long-section long-section--cut-border review-section">
+        <h2 class="second-header">Отзывы</h2>
+        <p class="review-section__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+          как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+          фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <a class="review-section__author-link" href="#">Анастасия Красильникова
+          <p class="review-section__author-nick">@misssssiskras</p>
+        </a>
+        <button class="btn review-section__btn review-section__btn--left" type="button">Предыдущий</button>
+        <button class="btn review-section__btn review-section__btn--right" type="button">Следующий</button>
+        <a class="btn review-section__btn  review-section__btn--new-review" href="#">Написать</a>
+      </section>
     </main>
 
     <footer class="main-footer">
