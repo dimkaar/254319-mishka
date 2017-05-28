@@ -7,21 +7,61 @@
   <body>
     <header class="main-header">
       <section class="slim-section slim-section--white">
-        <span class="main-header__menu"></span>
+        <div class="main-header__menu">
+          <ul class="main-header__menu-list">
+            <li class="main-header__menu-item">
+              <a class="section-slim main-header__menu-link" href="#">Каталог товаров</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="section-slim main-header__menu-link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="section-slim main-header__menu-link main-header__menu-link--search-logo" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="section-slim main-header__menu-link main-header__menu-link--cart-logo" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="desc-section">
-        <h2 class="second-header desc-section__second-header">Милые штуки ручной  работы для дома</h2>
-        <section class="product-types product-types--color-light-green">
-          <h3 class="third-header product-types__third-header">Предметы  интерьера</h3>
+        <h2 class="second-header product-types--lamp-img">Милые штуки ручной работы для дома</h2>
+        <section class="product-types product-types--light-green">
+          <h3 class="third-header">Предметы интерьера</h3>
         </section>
-        <section class="product-types product-types--color-green">
-          <h3 class="third-header product-types__third-header">Детские  игрушки</h3>
+        <section class="product-types product-types--green product-types--cube-img">
+          <h3 class="third-header">Детские игрушки</h3>
         </section>
       </section>
     </header>
 
     <main>
-
+      <article class="product-article long-section long-section--cut-border">
+        <h2 class="second-header">Вязаные корзинки</h2>
+        <b class="product-article__promo-text">Товар недели</b>
+        <p class="product-article__paragraph">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>product-article
+        <div class="table-block">
+          <p class="table-block__row">
+            <span class="table-block__cell">Цвет:</span>
+            <span class="table-block__cell">«Тиффани»/серый</span>
+          </p>
+          <p class="table-block__row">
+            <span class="table-block__cell">Диаметр</span>
+            <span class="table-block__cell">25 см</span>
+          </p>
+          <p class="table-block__row">
+            <span class="table-block__cell">Высота</span>
+            <span class="table-block__cell">15 см</span>
+          </p>
+        </div>
+        <figure class="image-block">
+          <img class="image-block__img" src="http://placehold.it/100x150" alt="Изображение товара" width="100" height="150">
+          <figcaption class="image-block__img-text">Цена: 990 руб.</figcaption>
+        </figure>
+        <a class="btn product-article__buy-btn" href="#">Заказать</a>
+      </article>
     </main>
 
     <footer class="main-footer">
@@ -32,7 +72,7 @@
       </section>
       <section class="slim-section slim-section--grey">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано <span class="main-footer__hidden-text">html academy</span>
+          Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
         </a>
       </section>
     </footer>
