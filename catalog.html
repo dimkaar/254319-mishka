@@ -9,11 +9,11 @@
     <h2 class="second-header">Добавить в корзину</h2>
     <p class="modal-block__text">Выберите размер:</p>
     <div class="modal-window__size-btns">
-      <span class="btn modal-window__btn modal-window__btn--active">S</span>
-      <span class="btn modal-window__btn">M</span>
-      <span class="btn modal-window__btn">L</span>
+      <span class="text-btn modal-window__btn modal-window__btn--active">S</span>
+      <span class="text-btn modal-window__btn">M</span>
+      <span class="text-btn modal-window__btn">L</span>
     </div>
-    <button class="btn modal-block__btn">Добавить</button>
+    <button class="text-btn modal-block__btn">Добавить</button>
   </section>
 
   <header class="main-header">
@@ -35,13 +35,66 @@
         </ul>
       </nav>
     </section>
+
     <div class="main-header__title-block">
       <h2 class="second-header">Каталог товаров</h2>
     </div>
   </header>
 
-  <main>
+  <main class="catalogue-main">
+    <article class="article catalogue-item">
+      <header class="catalogue-item__desc-header">
+      <img class="catalogue-item__img" src="http://placehold.it/150x100">
+      <p class="catalogue-item__product-header">Зайчик-попрыгайчик</p>
+      <p class="catalogue-item__product-desc">Рост 30 см, вес 200 г</p>
+      </header>
+      <hr>
+      <footer class="article catalogue-item__desc-footer">
+        <p class="catalogue-item__product-price">1 200 руб.</p>
+        <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
+      </footer>
+    </article>
 
+    <article class="article catalogue-item">
+      <header class="catalogue-item__desc-header">
+      <img class="catalogue-item__img" src="http://placehold.it/150x100">
+      <p class="catalogue-item__product-header">Корзинка для белья</p>
+      <p class="catalogue-item__product-desc">Диаметр 15 см, высота 10 см</p>
+      </header>
+      <hr>
+      <footer class="article catalogue-item__desc-footer">
+        <p class="catalogue-item__product-price">690 руб.</p>
+        <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
+      </footer>
+    </article>
+
+    <article class="article catalogue-item">
+      <header class="catalogue-item__desc-header">
+      <img class="catalogue-item__img" src="http://placehold.it/150x100">
+      <p class="catalogue-item__product-header">Большая корзинка для игрушек</p>
+      <p class="catalogue-item__product-desc">Диаметр 30 см, высота 30 см</p>
+      </header>
+      <hr>
+      <footer class="catalogue-item__desc-footer">
+        <p class="catalogue-item__product-price">1 500 руб.</p>
+        <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
+      </footer>
+    </article>
+
+    <article class="article about-manufacture">
+      <h2 class="second-header second-header--camera-logo">Процесс производства</h2>
+      <video class="about-manufacture__video" width="260" height="150" poster="http://placehold.it/250x150" controls>
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/ogg">
+        <source src="#" type="video/webm">
+      </video>
+      <p class="about-manufacture__text">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
+      <a class="text-btn about-manufacture__btn" href="#">Сделать заказ</a>
+    </article>
   </main>
+
+  
 </body>
 </html>
