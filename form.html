@@ -26,7 +26,7 @@
       </section>
 
       <div class="main-header__title-block">
-        <h2 class="second-header">Вязание на заказ</h2>
+        <h1 class="first-header">Вязание на заказ</h1>
       </div>
     </header>
 
@@ -35,7 +35,7 @@
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="#">
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Тип</legend>
+          <p class="form__section-text">Тип</p>
           <label class="form__label">
             <input class="form__radio" type="radio" name="accessory" value="accessory" checked> Аксессуар для интерьера
           </label>
@@ -44,7 +44,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Цвет</legend>
+          <p class="form__section-text">Цвет</p>
           <label class="form__label">
             <input class="form__checkbox" type="checkbox" name="white" value="white" checked> Белый
           </label>
@@ -65,7 +65,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">ФИО</legend>
+          <p class="form__section-text">ФИО</p>
           <label class="form__label" for="name">Имя:</label>
           <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
           <label class="form__label">Фамилия:</label>
@@ -74,15 +74,15 @@
           <input class="form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Тел</legend>
+          <p class="form__section-text">Тел</p>
           <input class="form__tel" type="tel" name="tel" placeholder="+7 XXX XX XX*">
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">E-mail</legend>
+          <p class="form__section-text">E-mail</p>
           <input class="form__email" type="email" name="email" placeholder="Ваш Email*">
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Доп</legend>
+          <p class="form__section-text">Доп</p>
           <textarea class="form__textarea" name="extra" cols="25" rows="7" placeholder="Опишите все Ваши пожелания к заказу"></textarea>
         </fieldset>
         <p class="form__text">*Поля обязательны для заполнения</p>
@@ -91,16 +91,14 @@
     </main>
 
     <footer class="main-footer">
-      <section class="slim-block slim-block--grey footer-social">
+      <div class="footer-social">
         <a class="footer-social__social-btn footer-social__social-btn--inst" href="#">Instagram</a>
         <a class="footer-social__social-btn footer-social__social-btn--fb" href="#">Facebook</a>
         <a class="footer-social__social-btn footer-social__social-btn--tw" href="#">Twitter</a>
-      </section>
-      <section class="slim-block slim-block--grey">
-        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
-        </a>
-      </section>
+      </div>
+      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
+      </a>
     </footer>
   </body>
 </html>
