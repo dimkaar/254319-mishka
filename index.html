@@ -5,8 +5,142 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <section class="modal-block">
+      <h2 class="second-header">Добавить в корзину</h2>
+      <p class="modal-block__text">Выберите размер:</p>
+      <div class="modal-block__size-btns">
+        <span class="btn modal-block__btn modal-block__btn--active">S</span>
+        <span class="btn modal-block__btn">M</span>
+        <span class="btn modal-block__btn">L</span>
+      </div>
+      <button class="text-btn modal-block__btn">Добавить</button>
+    </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="main-header">
+      <section class="slim-block slim-block--white">
+        <nav class="main-header__nav">
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a class="block-slim main-header__nav-link" href="#">Каталог товаров</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a class="block-slim main-header__nav-link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a class="block-slim main-header__nav-link main-header__nav-link--search-logo" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a class="block-slim main-header__nav-link main-header__nav-link--cart-logo" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
 
+      <section class="desc-block">
+        <h1 class="first-header">Милые штуки ручной работы для дома</h1>
+        <a class="product-types product-types--light-green product-types--lamp-img">
+          <p class="product-types__text">Предметы интерьера</p>
+        </a>
+
+        <a class="product-types product-types--green product-types--cube-img">
+          <p class="product-types__text">Детские игрушки</p>
+        </a>
+      </section>
+    </header>
+
+    <main>
+      <article class="product-article long-block long-block--cut-border">
+        <h2 class="second-header">Вязаные корзинки</h2>
+        <b class="product-article__promo-text">Товар недели</b>
+        <p class="product-article__text">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <div class="table-block">
+          <p class="table-block__row">
+            <span class="table-block__cell product-article__cell">
+              Цвет:</span>
+            <span class="table-block__cell product-article__cell">
+              «Тиффани»/серый</span>
+          </p>
+          <p class="table-block__row">
+            <span class="table-block__cell product-article__cell">
+              Диаметр</span>
+            <span class="table-block__cell product-article__cell">
+              25 см</span>
+          </p>
+          <p class="table-block__row">
+            <span class="table-block__cell product-article__cell">
+              Высота</span>
+            <span class="table-block__cell product-article__cell">
+              15 см</span>
+          </p>
+        </div>
+        <figure class="image-block">
+          <img class="image-block__img" src="http://placehold.it/100x150" alt="Изображение товара" width="100" height="150">
+          <figcaption class="image-block__img-text">Цена: 990 руб.</figcaption>
+        </figure>
+        <a class="text-btn product-article__btn" href="#">Заказать</a>
+      </article>
+
+      <section class="long-block about-block">
+        <h2 class="second-header">Коротко о нас:</h2>
+        <p class="about-block__text about-block__text--flower-logo">
+          Экологически  чистые материалы</p>
+        <p class="about-block__text about-block__text--money-logo">
+          Скандинавский стиль  по российской цене</p>
+        <p class="about-block__text about-block__text--heart-logo">
+          Увеличивает лайки на фотографиях</p>
+        <p class="about-block__text about-block__text--clew-logo">
+          Связано вручную с  любовью и умилением</p>
+        <p class="about-block__text about-block__text--rocket-logo">
+          Поддержка отечественного производителя</p>
+        <p class="about-block__text about-block__text--gift-logo">
+          Поставляется в  подарочной упаковке</p>
+      </section>
+
+      <section class="long-block long-block--cut-border review-block">
+        <h2 class="second-header">Отзывы</h2>
+        <p class="review-block__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+          как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+          фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <a class="review-block__author-link" href="#">Анастасия Красильникова
+          <p class="review-block__author-nick">@misssssiskras</p>
+        </a>
+        <button class="btn review-block__btn review-block__btn--left" type="button">Предыдущий</button>
+        <button class="btn review-block__btn review-block__btn--right" type="button">Следующий</button>
+        <a class="text-btn review-block__btn" href="#">Написать</a>
+      </section>
+
+      <section class="long-block contacts-block">
+        <h3 class="third-header">Контакты</h3>
+        <div class="table-block">
+          <p class="table-block__row">
+            <span class="table-block__cell contacts-block__cell">e-mail</span>
+            <span class="table-block__cell contacts-block__cell contacts-block__cell--mint-underline">
+              info@mimimishkashop.ru</span>
+          </p>
+          <p class="table-block__row">
+            <span class="table-block__cell contacts-block__cell">адрес:</span>
+            <span class="table-block__cell contacts-block__cell">г. Санкт-Петербург, ул. Большая Конюшенная,
+              д. 19/8, офис 101</span>
+          </p>
+        </div>
+        <div class="map-block"></div>
+        <a class="text-btn contacts-block__btn" href="#">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-social">
+        <a class="footer-social__social-btn footer-social__social-btn--inst" href="#">Instagram</a>
+        <a class="footer-social__social-btn footer-social__social-btn--fb" href="#">Facebook</a>
+        <a class="footer-social__social-btn footer-social__social-btn--tw" href="#">Twitter</a>
+      </div>
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
+        </a>
+    </footer>
   </body>
 </html>
