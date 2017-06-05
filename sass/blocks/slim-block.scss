@@ -1,11 +1,18 @@
-@import "../variables.scss";
-
 .slim-block {
   display: flex;
   flex-basis: auto;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 27px;
+  padding-bottom: 28px;
+
+  text-align: center;
 
   background-color: $primary-bg-color;
+}
+
+.slim-block--menu {
+  padding-top: 20px;
+  padding-bottom: 15px;
 }

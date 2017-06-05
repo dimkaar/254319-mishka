@@ -51,10 +51,10 @@
 }
 
 .modal-block__btn--active {
-  border-color: #63d1bb;
+  border-color: $mint-color;
 }
 
-.modal-block__btn--mint--white {
+.modal-block__btn--mint {
   width: 81.25%;
   margin-bottom: 45px;
   padding-top: 15px;
@@ -64,6 +64,6 @@
   line-height: 16px;
   color: #ffffff;
 
-  background-color: #63d1bb;
-  border-color: #63d1bb;
+  background-color: $mint-color;
+  border-color: $mint-color;
 }

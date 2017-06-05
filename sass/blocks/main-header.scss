@@ -1,5 +1,3 @@
-@import "../variables.scss";
-
 .main-header {
   background-color: $primary-bg-color;
   background-image: url("../../img/hero-mobile@1x.jpg");
@@ -12,8 +10,63 @@
   outline: 2px solid greenyellow;
 }
 
-.main-header__nav {
+.main-header__nav-list {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
 }
+
+.main-header__nav-link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.main-header__nav-link--search-logo,
+.main-header__nav-link--cart-logo {
+  position: relative;
+}
+
+.main-header__nav-link--search-logo,
+.main-header__nav-link--cart-logo {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.main-header__nav-link--search-logo::before {
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 20%;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: $primary-bg-color;
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+
+.main-header__nav-link--cart-logo::before {
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 15%;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: $primary-bg-color;
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+
