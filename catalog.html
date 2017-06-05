@@ -6,107 +6,106 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="body-overlay">
-    <section class="modal-block">
-      <h2 class="second-header">Добавить в корзину</h2>
-      <p class="modal-block__text">Выберите размер:</p>
-      <div class="modal-block__size-btns">
-        <span class="btn modal-block__btn modal-block__btn--active">S</span>
-        <span class="btn modal-block__btn">M</span>
-        <span class="btn modal-block__btn">L</span>
-      </div>
-      <button class="text-btn modal-block__btn modal-block__btn--mint--white">Добавить</button>
+  <div class="body-overlay"></div>
+  <section class="modal-block">
+    <h2 class="second-header">Добавить в корзину</h2>
+    <p class="modal-block__text">Выберите размер:</p>
+    <div class="modal-block__size-btns">
+      <span class="text-btn modal-block__btn modal-block__btn--active">S</span>
+      <span class="text-btn modal-block__btn">M</span>
+      <span class="text-btn modal-block__btn">L</span>
+    </div>
+    <button class="text-btn modal-block__btn modal-block__btn--mint--white">Добавить</button>
+  </section>
+
+  <header class="main-header">
+    <section class="slim-block slim-block--white">
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a class="slim-block main-header__nav-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="slim-block main-header__nav-link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="slim-block main-header__nav-link main-header__nav-link--search-logo" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="slim-block main-header__nav-link main-header__nav-link--cart-logo" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </section>
 
-    <header class="main-header">
-      <section class="slim-block slim-block--white">
-        <nav class="main-header__nav">
-          <ul class="main-header__nav-list">
-            <li class="main-header__nav-item">
-              <a class="block-slim main-header__nav-link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-header__nav-item">
-              <a class="block-slim main-header__nav-link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="main-header__nav-item">
-              <a class="block-slim main-header__nav-link main-header__nav-link--search-logo" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-header__nav-item">
-              <a class="block-slim main-header__nav-link main-header__nav-link--cart-logo" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+    <div class="main-header__title-block">
+      <h1 class="first-header">Каталог товаров</h1>
+    </div>
+  </header>
 
-      <div class="main-header__title-block">
-        <h1 class="first-header">Каталог товаров</h1>
-      </div>
-    </header>
-
-    <main class="catalogue-main">
-      <article class="catalogue-item">
-        <header class="catalogue-item__desc-header">
+  <main class="catalogue-main">
+    <article class="catalogue-item">
+      <header class="catalogue-item__desc-header">
         <img class="catalogue-item__img" src="http://placehold.it/150x100" alt="Изображение Зайчика-попрыгайчика">
         <h2 class="catalogue-item__title">Зайчик-попрыгайчик</h2>
         <p class="catalogue-item__product-desc">Рост 30 см, вес 200 г</p>
-        </header>
-        <hr>
-        <footer class="catalogue-item__desc-footer">
-          <p class="catalogue-item__product-price">1 200 руб.</p>
-          <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
-        </footer>
-      </article>
+      </header>
+      <hr>
+      <footer class="catalogue-item__desc-footer">
+        <p class="catalogue-item__product-price">1 200 руб.</p>
+        <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
+      </footer>
+    </article>
 
-      <article class="catalogue-item">
-        <header class="catalogue-item__desc-header">
+    <article class="catalogue-item">
+      <header class="catalogue-item__desc-header">
         <img class="catalogue-item__img" src="http://placehold.it/150x100" alt="Изображение корзины для белья">
         <h2 class="catalogue-item__title">Корзинка для белья</h2>
         <p class="catalogue-item__product-desc">Диаметр 15 см, высота 10 см</p>
-        </header>
-        <hr>
-        <footer class="catalogue-item__desc-footer">
-          <p class="catalogue-item__product-price">690 руб.</p>
-          <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
-        </footer>
-      </article>
+      </header>
+      <hr>
+      <footer class="catalogue-item__desc-footer">
+        <p class="catalogue-item__product-price">690 руб.</p>
+        <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
+      </footer>
+    </article>
 
-      <article class="catalogue-item">
-        <header class="catalogue-item__desc-header">
+    <article class="catalogue-item">
+      <header class="catalogue-item__desc-header">
         <img class="catalogue-item__img" src="http://placehold.it/150x100" alt="Изображение корзины для игрушек">
         <h2 class="catalogue-item__title">Большая корзинка для игрушек</h2>
         <p class="catalogue-item__product-desc">Диаметр 30 см, высота 30 см</p>
-        </header>
-        <hr>
-        <footer class="catalogue-item__desc-footer">
-          <p class="catalogue-item__product-price">1 500 руб.</p>
-          <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
-        </footer>
-      </article>
+      </header>
+      <hr>
+      <footer class="catalogue-item__desc-footer">
+        <p class="catalogue-item__product-price">1 500 руб.</p>
+        <button class="btn catalogue-item__btn" type="button">Добавить в корзину</button>
+      </footer>
+    </article>
 
-      <article class="about-manufacture">
-        <h2 class="second-header second-header--camera-logo">Процесс производства</h2>
-        <video class="about-manufacture__video" width="260" height="150" poster="http://placehold.it/250x150" controls>
-          <source src="#" type="video/mp4">
-          <source src="#" type="video/ogg">
-          <source src="#" type="video/webm">
-        </video>
-        <p class="about-manufacture__text">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-          появляются наши товары.</p>
-        <a class="text-btn about-manufacture__btn" href="#">Сделать заказ</a>
-      </article>
-    </main>
+    <article class="about-manufacture">
+      <h2 class="second-header second-header--camera-logo">Процесс производства</h2>
+      <video class="about-manufacture__video" width="260" height="150" poster="http://placehold.it/250x150" controls>
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/ogg">
+        <source src="#" type="video/webm">
+      </video>
+      <p class="about-manufacture__text">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
+      <a class="text-btn about-manufacture__btn" href="#">Сделать заказ</a>
+    </article>
+  </main>
 
-    <footer class="main-footer">
-      <div class="footer-social">
-        <a class="footer-social__social-btn footer-social__social-btn--inst" href="#">Instagram</a>
-        <a class="footer-social__social-btn footer-social__social-btn--fb" href="#">Facebook</a>
-        <a class="footer-social__social-btn footer-social__social-btn--tw" href="#">Twitter</a>
-      </div>
-      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
-      </a>
-    </footer>
-  </div>
+  <footer class="main-footer">
+    <div class="footer-social">
+      <a class="footer-social__social-btn footer-social__social-btn--inst" href="#">Instagram</a>
+      <a class="footer-social__social-btn footer-social__social-btn--fb" href="#">Facebook</a>
+      <a class="footer-social__social-btn footer-social__social-btn--tw" href="#">Twitter</a>
+    </div>
+    <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано <span class="main-footer__htmlacademy-logo">html academy</span>
+    </a>
+  </footer>
 </body>
 </html>
