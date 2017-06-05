@@ -1,7 +1,14 @@
 @import "../variables.scss";
 
+html {
+  height: 100%;
+}
+
 body {
+  position: relative;
+
   width: 320px;
+  height: 100%;
 
   font-family: $font-stack;
   font-size: $primary-font-size;
