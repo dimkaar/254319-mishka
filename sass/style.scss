@@ -1,4 +1,6 @@
-body {
-  background: red;
-}
+@import "variables.scss";
 
+@import "global/fonts.scss";
+@import "global/base.scss";
+
+@import "blocks/modal-block.scss";
