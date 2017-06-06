@@ -6,10 +6,6 @@
   background-position: 50% 50%;
 }
 
-.main-header * {
-  outline: 2px solid greenyellow;
-}
-
 .main-header__nav-list {
   width: 100%;
   margin-top: 0;
@@ -44,12 +40,10 @@
       height: 21px;
 
       background-color: $primary-bg-color;
-      background-image: url("../../img/icon-search.svg");
+      background-image: url("../img/icon-search.svg");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 50%;
-
-      outline: 1px solid red;
     }
   }
 
@@ -69,12 +63,10 @@
       height: 21px;
 
       background-color: $primary-bg-color;
-      background-image: url("../../img/icon-cart.svg");
+      background-image: url("../img/icon-cart.svg");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 50%;
-
-      outline: 1px solid red;
     }
   }
 }
