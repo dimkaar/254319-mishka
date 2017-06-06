@@ -10,9 +10,9 @@
   text-align: center;
 
   background-color: $primary-bg-color;
-}
 
-.slim-block--menu {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  &--menu {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }

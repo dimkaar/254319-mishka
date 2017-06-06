@@ -48,22 +48,22 @@
   width: 78px;
 
   border: 2px solid #c7c7c7;
-}
 
-.modal-block__btn--active {
-  border-color: $mint-color;
-}
+  &--active {
+    border-color: $mint-color;
+  }
 
-.modal-block__btn--mint {
-  width: 81.25%;
-  margin-bottom: 45px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  &--mint {
+    width: 81.25%;
+    margin-bottom: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-  font-size: 17px;
-  line-height: 16px;
-  color: #ffffff;
+    font-size: 17px;
+    line-height: 16px;
+    color: #ffffff;
 
-  background-color: $mint-color;
-  border-color: $mint-color;
+    background-color: $mint-color;
+    border-color: $mint-color;
+  }
 }
