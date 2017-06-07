@@ -1,0 +1,55 @@
+.review-block .second-header {
+  margin-bottom: 35px;
+}
+
+.review-block__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.review-block__author-link {
+  display: block;
+
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  line-height: $tertiary-line-height;
+  color: #000000;
+  text-decoration: none;
+}
+
+.review-block__author-nick {
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.review-block__arrow-btn {
+  display: inline-block;
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-color: $primary-bg-color;
+  background-repeat: no-repeat;
+  background-size: 45% auto;
+  background-position: 50%;
+  border: 1px solid #ececec;
+
+  &--left {
+    border-right: none;
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--right {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+.review-block__btn {
+  margin-bottom: 40px;
+}
