@@ -1,0 +1,24 @@
+.product-article .second-header {
+  margin-bottom: 10px;
+}
+
+.product-article__promo-text {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  line-height: $secondary-line-height;
+  color: $mint-color;
+  text-transform: uppercase;
+}
+
+.product-article__text {
+  margin-bottom: 30px;
+
+  line-height: $tertiary-line-height;
+}
+
+.product-article__btn {
+  margin-bottom: 35px;
+}

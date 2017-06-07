@@ -1,0 +1,17 @@
+.table-block {
+  display: table;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.table-block__row {
+  display: table-row;
+}
+
+.table-block__cell {
+  display: table-cell;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid #ececec;
+}

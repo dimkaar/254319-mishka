@@ -1,12 +1,7 @@
-html {
-  height: 100%;
-}
-
 body {
   position: relative;
 
   width: 320px;
-  height: 100%;
 
   font-family: $font-stack;
   font-size: $primary-font-size;
@@ -17,6 +12,8 @@ body {
 }
 
 .first-header {
+  margin-top: 0;
+
   font-family: $header-font-family;
   font-size: 27px;
   color: $header-color;
@@ -24,10 +21,11 @@ body {
 }
 
 .second-header {
+  margin-top: 0;
+
   font-family: $header-font-family;
   font-size: 25px;
   color: $header-color;
-  text-align: center;
 }
 
 .btn {
@@ -39,5 +37,19 @@ body {
 }
 
 .text-btn {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  line-height: $secondary-line-height;
+  color: $primary-text-color;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
+
+  border: 2px solid #444444;
 }

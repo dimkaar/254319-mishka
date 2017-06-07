@@ -16,9 +16,8 @@
   box-shadow: 0 30px 30px -30px #c6c6c6;
 }
 
-.modal-block > .second-header {
+.modal-block .second-header {
   width: 55%;
-  margin-top: 0;
   margin-bottom: 15px;
 
   text-transform: uppercase;
@@ -59,7 +58,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
-    font-size: 17px;
+    font-size: $secondary-font-size;
     line-height: 16px;
     color: #ffffff;
 
