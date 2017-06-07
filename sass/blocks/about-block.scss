@@ -1,0 +1,62 @@
+.about-block .second-header {
+  margin-bottom: 30px;
+}
+
+.about-block__text {
+  position: relative;
+
+  width: 83%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 75px;
+
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  line-height: $secondary-line-height;
+  color: #000000;
+
+  &--rocket-logo {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 50px;
+
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+
+  &--flower-logo::before {
+    background-image: url(../img/icon-feature-1.svg);
+  }
+
+  &--money-logo::before {
+    background-image: url(../img/icon-feature-2.svg);
+  }
+
+  &--heart-logo::before {
+    background-image: url(../img/icon-feature-3.svg);
+  }
+
+  &--clew-logo::before {
+    background-image: url(../img/icon-feature-5.svg);
+  }
+
+  &--rocket-logo::before {
+    left: -10px;
+
+    background-image: url(../img/icon-feature-4.svg);
+  }
+
+  &--gift-logo::before {
+    background-image: url(../img/icon-feature-6.svg);
+  }
+}
