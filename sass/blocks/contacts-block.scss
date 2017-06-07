@@ -1,0 +1,19 @@
+.contacts-block .third-header {
+  margin-bottom: 30px;
+}
+
+.contacts-block__table {
+  margin-bottom: 45px;
+}
+
+.contacts-block__cell {
+  border: none;
+}
+
+.contacts-block__cell:nth-of-type(2n) {
+  padding-left: 30px;
+}
+
+.contacts-block__btn {
+  margin-bottom: 40px;
+}

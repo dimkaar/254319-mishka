@@ -1,0 +1,15 @@
+.map-block {
+  content: "";
+
+  width: 120%;
+  height: 457px;
+  margin-right: -9.4%;
+  margin-bottom: 40px;
+  margin-left: -9.4%;
+
+  background-color: $primary-bg-color;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
