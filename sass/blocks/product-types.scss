@@ -1,8 +1,10 @@
 .product-types {
-  position: relative;
-
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  padding-right: 9.4%;
+  padding-left: 9.4%;
   box-sizing: border-box;
 
   text-decoration: none;
@@ -13,38 +15,6 @@
 
   &--green {
     background-color: #56c3b2;
-  }
-
-  &--lamp-img::after {
-    content: "";
-    position: absolute;
-    top: 15%;
-    right: 10%;
-
-    width: 50px;
-    height: 70px;
-
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: auto;
-    opacity: 0.2;
-  }
-
-  &--cube-img::after {
-    content: "";
-    position: absolute;
-    top: 20%;
-    right: 8%;
-
-    width: 65px;
-    height: 65px;
-
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: auto;
-    opacity: 0.2;
   }
 }
 
@@ -57,4 +27,12 @@
   font-weight: 700;
   line-height: 24px;
   color: $white-text-color;
+}
+
+.product-types__img {
+  opacity: 0.2;
+
+  &--cube {
+    margin-right: -10px;
+  }
 }
