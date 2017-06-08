@@ -1,0 +1,75 @@
+.about-manufacture {
+  margin-bottom: 55px;
+  padding-top: 25px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  border: 1px solid #e5e5e5;
+}
+
+.about-manufacture .second-header {
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 80px;
+
+  font-size: $secondary-font-size;
+  line-height: $tertiary-line-height;
+
+  &--camera-logo::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 25px;
+
+    width: 35px;
+    height: 28px;
+
+    background-color: #ffffff;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+}
+
+.about-manufacture__video {
+  position: relative;
+
+  width: 260px;
+  height: 150px;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 105px;
+    height: 85px;
+
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+}
+
+.about-manufacture__text {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-right: $primary-padding;
+  padding-left: 34px;
+
+  font-size: 13px;
+  line-height: $tertiary-line-height;
+}
+
+.about-manufacture__btn {
+  width: 74%;
+  margin-bottom: 30px;
+  margin-left: 34px;
+  box-sizing: border-box;
+}
