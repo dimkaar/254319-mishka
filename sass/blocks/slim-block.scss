@@ -6,10 +6,12 @@
   width: 100%;
   padding-top: 27px;
   padding-bottom: 28px;
+  box-sizing: border-box;
 
   text-align: center;
 
   background-color: $primary-bg-color;
+  border-bottom: 1px solid #ececec;
 
   &--menu {
     padding-top: 20px;
