@@ -1,0 +1,77 @@
+.catalogue-item {
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+
+.catalogue-item__link {
+  text-decoration: none;
+}
+
+.catalogue-item__img {
+  width: 260px;
+  height: 195px;
+  margin-bottom: 25px;
+}
+
+.catalogue-item__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-right: $primary-padding;
+  padding-left: $primary-padding;
+
+  font-size: 17px;
+  line-height: $tertiary-line-height;
+  color: #000000;
+}
+
+.catalogue-item__product-desc {
+  margin-top: 0;
+  margin-right: $primary-padding;
+  margin-left: $primary-padding;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  font-size: 13px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalogue-item__desc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-right: $primary-padding;
+  padding-left: $primary-padding;
+}
+
+.catalogue-item__product-price {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  line-height: $tertiary-line-height;
+  color: #000000;
+}
+
+.catalogue-item__btn {
+  width: 22px;
+  height: 22px;
+
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-color: $primary-bg-color;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  border: none;
+  opacity: 0.2;
+}
