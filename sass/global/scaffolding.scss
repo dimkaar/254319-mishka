@@ -1,7 +1,18 @@
 body {
   position: relative;
 
-  min-width: 320px;
+  @media #{$mobile-widths} {
+    width: 320px;
+  }
+
+  @media #{$tablet-widths} {
+    width: 668px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1050px;
+  }
+
   box-sizing: border-box;
 
   font-family: $font-stack;
