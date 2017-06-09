@@ -1,0 +1,14 @@
+.form-main {
+  margin-bottom: 55px;
+  padding-right: $primary-padding;
+  padding-left: $primary-padding;
+  box-sizing: border-box;
+}
+
+.form-main__text {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 13px;
+  line-height: $tertiary-line-height;
+}
