@@ -15,10 +15,6 @@
   line-height: $secondary-line-height;
   color: #000000;
 
-  &--rocket-logo {
-    width: 100%;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +28,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
+  }
+  
+  &--rocket-logo {
+    width: 100%;
   }
 
   &--flower-logo::before {
