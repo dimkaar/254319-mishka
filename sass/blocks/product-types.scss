@@ -1,11 +1,6 @@
 .product-types {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   width: 100%;
-  padding-right: 9.4%;
-  padding-left: 9.4%;
-  box-sizing: border-box;
 
   text-decoration: none;
 
@@ -16,6 +11,12 @@
   &--green {
     background-color: #56c3b2;
   }
+}
+
+.product-types .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-types__text {
