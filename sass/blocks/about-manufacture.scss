@@ -8,29 +8,33 @@
   border: 1px solid #e5e5e5;
 }
 
-.about-manufacture .second-header {
-  position: relative;
+.about-manufacture {
+  .second-header {
+    position: relative;
 
-  margin-bottom: 25px;
-  padding-left: 80px;
+    margin-bottom: 25px;
+    padding-left: 80px;
 
-  font-size: $secondary-font-size;
-  line-height: $tertiary-line-height;
+    font-size: $secondary-font-size;
+    line-height: $tertiary-line-height;
 
-  &--camera-logo::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 25px;
+    &--camera-logo {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 25px;
 
-    width: 35px;
-    height: 28px;
+        width: 35px;
+        height: 28px;
 
-    background-color: #ffffff;
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
+        background-color: #ffffff;
+        background-image: url("../img/icon-video.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+      }
+    }
   }
 }
 
