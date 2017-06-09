@@ -17,22 +17,27 @@
 }
 
 .modal-block .second-header {
-  width: 55%;
+  width: 52%;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 15px;
 
+  text-align: center;
   text-transform: uppercase;
 }
 
 .modal-block__text {
   margin-top: 0;
   margin-bottom: 15px;
+
+  text-align: center;
 }
 
 .modal-block__size-btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 81.25%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -53,7 +58,7 @@
   }
 
   &--mint {
-    width: 81.25%;
+    width: 100%;
     margin-bottom: 45px;
     padding-top: 15px;
     padding-bottom: 15px;
