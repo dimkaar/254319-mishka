@@ -86,14 +86,14 @@
       width: 51.65%;
       padding-right: 6.51%;
       box-sizing: border-box;
-    }
 
-    .main-header__nav-item {
-      &:first-of-type {
-        width: 21%;
-      }
-      &:last-of-type {
-        width: 79%;
+      .main-header__nav-item {
+        &:first-of-type {
+          width: 21%;
+        }
+        &:last-of-type {
+          width: 79%;
+        }
       }
     }
   }
