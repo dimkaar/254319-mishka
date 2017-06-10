@@ -1,20 +1,40 @@
 .slim-block {
   display: flex;
-  flex-basis: auto;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 28px;
+  padding-top: 22px;
+  padding-bottom: 21px;
   box-sizing: border-box;
 
-  text-align: center;
+  @media #{$mobile-widths} {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-  background-color: $primary-bg-color;
-  border-bottom: 1px solid #ececec;
+    text-align: center;
 
-  &--menu {
-    padding-top: 20px;
-    padding-bottom: 15px;
+    background-color: $primary-bg-color;
+    border-bottom: 1px solid #ececec;
+
+    &--menu {
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+  }
+
+  @media #{$tablet-widths} {
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+
+    text-align: left;
+  }
+
+  &--logo {
+    @media #{$tablet-widths} {
+      width: 48.3%;
+      padding-left: 6.3%;
+      box-sizing: border-box;
+
+      border-bottom: 1px solid #ececec;
+    }
   }
 }
