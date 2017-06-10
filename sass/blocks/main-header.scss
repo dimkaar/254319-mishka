@@ -138,6 +138,7 @@
       box-sizing: border-box;
 
       background-color: $primary-bg-color;
+      border-bottom: 1px solid #ececec;
 
       .main-header__nav-item {
         &:first-of-type {
@@ -177,7 +178,7 @@
       content: "";
       position: absolute;
       top: 36%;
-      left: 20%;
+      left: 10%;
       width: 21px;
       height: 21px;
 
@@ -192,10 +193,6 @@
         top: 39%;
         left: 39%;
       }
-    }
-
-    @media #{$mobile-widths} {
-      padding-left: 20px;
     }
 
     @media #{$tablet-widths} {
@@ -220,7 +217,7 @@
       content: "";
       position: absolute;
       top: 36%;
-      left: 15%;
+      left: 10%;
 
       width: 21px;
       height: 21px;
@@ -237,12 +234,8 @@
       }
     }
 
-    @media #{$mobile-widths} {
-      padding-left: 20px;
-    }
-
     @media #{$tablet-widths} {
-      padding-left: 70px;
+      padding-left: 26.58%;
       padding-top: 32px;
       padding-bottom: 31px;
 
