@@ -24,18 +24,38 @@ body {
 .first-header {
   margin-top: 0;
 
-  font-family: $header-font-family;
-  font-size: 27px;
-  color: $header-color;
-  text-align: center;
+  @media #{$mobile-widths} {
+    font-family: $header-font-family;
+    font-size: 27px;
+    color: $header-color;
+    text-align: center;
+  }
+
+  @media #{$tablet-widths} {
+    font-family: $header-font-family;
+    font-size: 43px;
+    line-height: 50px;
+    color: $header-color;
+    text-align: center;
+  }
 }
 
 .second-header {
   margin-top: 0;
 
-  font-family: $header-font-family;
-  font-size: 25px;
-  color: $header-color;
+  @media #{$mobile-widths} {
+    font-family: $header-font-family;
+    font-size: 25px;
+    color: $header-color;
+  }
+
+  @media #{$tablet-widths} {
+    font-family: $header-font-family;
+    font-size: 43px;
+    line-height: 50px;
+    color: $header-color;
+    text-align: center;
+  }
 }
 
 .third-header {

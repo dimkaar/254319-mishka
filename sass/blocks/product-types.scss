@@ -11,6 +11,17 @@
   &--green {
     background-color: #56c3b2;
   }
+
+  @media #{$tablet-widths} {
+    width: 50%;
+  }
+
+  .container {
+    @media #{$tablet-widths} {
+      padding-right: $primary-padding;
+      padding-left: $primary-padding;
+    }
+  }
 }
 
 .product-types .container {
