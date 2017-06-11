@@ -5,4 +5,8 @@
 
   background-color: $primary-bg-color;
   border-bottom: 2px solid red;
+
+  @media #{$tablet-widths} {
+    padding-top: 60px;
+  }
 }
