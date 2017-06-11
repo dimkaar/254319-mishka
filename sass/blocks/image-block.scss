@@ -5,11 +5,27 @@
   align-items: center;
   width: 100%;
   margin: 0;
+
+  @media #{$tablet-widths} {
+    width: 56.4%;
+    padding-right: 12.81%;
+    box-sizing: border-box;
+  }
 }
 
 .image-block__img {
   display: block;
   margin-bottom: 30px;
+
+  @media #{$tablet-widths} {
+    position: absolute;
+    top: 24%;
+    right: 0;
+
+    width: 50%;
+    padding-right: 6.51%;
+    box-sizing: border-box;
+  }
 }
 
 .image-block__img-text {
