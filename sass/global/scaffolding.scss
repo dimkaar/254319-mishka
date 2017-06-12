@@ -59,8 +59,18 @@ body {
 }
 
 .third-header {
-  font-size: 18px;
-  color: $header-color;
+  @media #{$mobile-widths} {
+    font-size: 18px;
+    color: $header-color;
+  }
+
+  @media #{$tablet-widths} {
+    font-family: $header-font-family;
+    font-size: 43px;
+    line-height: 50px;
+    color: $header-color;
+    text-align: left;
+  }
 }
 
 .btn {
