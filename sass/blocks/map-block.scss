@@ -15,15 +15,22 @@
   &::after {
     content: "";
     position: absolute;
-    top: 170px;
+    top: 145px;
     left: 105px;
 
     width: 80px;
-    height: 100px;
+    height: 125px;
 
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
+
+    @media #{$tablet-widths} {
+      top: 195px;
+      left: 325px;
+
+      background-size: 100% auto;
+    }
   }
 }
