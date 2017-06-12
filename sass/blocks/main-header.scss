@@ -20,14 +20,17 @@
   background-position: 50%;
   border: none;
 
+  @media #{$tablet-widths} {
+    display: none;
+  }
+
+  @media #{$desktop-widths} {
+    display: none;
+  }
+
   &--open {
     @media #{$mobile-widths} {
       background-image: url("../img/icon-menu-open.svg");
-    }
-
-    @media #{$tablet-widths} {
-      background-color: transparent;
-      background-image: none;
     }
   }
 
@@ -35,24 +38,33 @@
     @media #{$mobile-widths} {
       background-image: url("../img/icon-menu-close.svg");
     }
-
-    @media #{$tablet-widths} {
-      background-color: transparent;
-      background-image: none;
-    }
   }
 }
 
 .main-header__nav {
   @media #{$tablet-widths} {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-right: 4%;
+    padding-left: 4%;
+    box-sizing: border-box;
   }
 
   .container {
     @media #{$tablet-widths} {
+      padding: 0;
+    }
+    @media #{$desktop-widths} {
       padding: 0;
     }
   }
@@ -109,6 +121,24 @@
 
   list-style: none;
 
+  @media #{$mobile-widths} {
+    width: 100%;
+  }
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+
   &:first-of-type {
     @media #{$tablet-widths} {
       width: 50%;
@@ -129,15 +159,42 @@
         font-size: $primary-font-size;
       }
     }
+
+    @media #{$desktop-widths} {
+      width: 40%;
+      padding-left: 4%;
+      box-sizing: border-box;
+      order: 1;
+
+      border-bottom: 1px solid #ececec;
+      .main-header__nav-link {
+        font-size: $secondary-font-size;
+      }
+
+      .main-header__nav-item {
+        &:first-of-type {
+          width: 46%;
+          padding-left: 1%;
+          box-sizing: border-box;
+
+          border-right: 1px solid #ececec;
+        }
+        &:last-of-type {
+          width: 54%;
+          padding-left: 8%;
+          box-sizing: border-box;
+        }
+      }
+    }
   }
 
-  &:last-of-type {
+  &:nth-of-type(2) {
     @media #{$tablet-widths} {
+      flex-wrap: wrap;
       width: 51.7%;
       padding-right: 6.51%;
       box-sizing: border-box;
 
-      background-color: $primary-bg-color;
       border-bottom: 1px solid #ececec;
 
       .main-header__nav-item {
@@ -145,20 +202,49 @@
           width: 23.6%;
         }
         &:last-of-type {
-          width: 100%;
+          width: 76.4%;
         }
       }
     }
+
+    @media #{$desktop-widths} {
+      flex-wrap: wrap;
+      width: 38%;
+      padding-left: 3%;
+      padding-right: 4%;
+      order: 3;
+    }
   }
 
-  @media #{$mobile-widths} {
-    width: 100%;
-  }
+  &:last-of-type {
+    @media #{$mobile-widths} {
+      display: none;
+    }
 
-  @media #{$tablet-widths} {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @media #{$tablet-widths} {
+      display: none;
+    }
+
+    @media #{$desktop-widths} {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      order: 4;
+      padding-left: 4%;
+      box-sizing: border-box;
+
+      .slim-block {
+        padding-top: 17px;
+        padding-bottom: 20px;
+        background-color: transparent;
+      }
+
+      .main-header__nav-item {
+        &:first-of-type {
+          width: 42%;
+        }
+      }
+    }
   }
 }
 
@@ -206,6 +292,14 @@
 
       border-left: 1px solid #ececec;
     }
+
+    @media #{$desktop-widths} {
+      padding-left: 26.58%;
+      padding-top: 30px;
+      padding-bottom: 34px;
+
+      border-left: 1px solid #ececec;
+    }
   }
 
   &--cart-logo {
@@ -235,9 +329,17 @@
     }
 
     @media #{$tablet-widths} {
-      padding-left: 26.58%;
+      padding-left: 31%;
       padding-top: 32px;
       padding-bottom: 31px;
+
+      border-left: 1px solid #ececec;
+    }
+
+    @media #{$desktop-widths} {
+      padding-left: 31%;
+      padding-top: 30px;
+      padding-bottom: 34px;
 
       border-left: 1px solid #ececec;
     }
@@ -256,6 +358,16 @@
     width: 50%;
     padding-right: 6.51%;
     order: 3;
+
+    line-height: $tertiary-line-height;
+    text-align: right;
+  }
+
+  @media #{$desktop-widths} {
+    display: block;
+    width: 50%;
+    order: 5;
+    padding-right: 4.45%;
 
     line-height: $tertiary-line-height;
     text-align: right;

@@ -26,6 +26,19 @@
     width: auto;
     padding-top: 19px;
     padding-bottom: 18px;
+    padding-left: 0;
+
+    text-align: left;
+    border-bottom: none;
+  }
+
+  @media #{$desktop-widths} {
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 34px;
+    padding-left: 0;
 
     text-align: left;
     border-bottom: none;
@@ -41,6 +54,18 @@
       box-sizing: border-box;
 
       border-bottom: 1px solid #ececec;
+    }
+
+    @media #{$desktop-widths} {
+      z-index: 5;
+
+      justify-content: center;
+      align-items: center;
+      width: 22%;
+      order: 2;
+      padding-top: 10px;
+      padding-bottom: 3px;
+      padding-left: 0;
     }
   }
 }

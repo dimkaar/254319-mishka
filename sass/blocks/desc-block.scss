@@ -20,6 +20,13 @@
 
     background-size: 100% auto;
   }
+
+  @media #{$desktop-widths}{
+    margin-top: -61px;
+    padding-top: 153px;
+
+    background-size: 100% auto;
+  }
 }
 
 .desc-block .first-header {
@@ -28,6 +35,10 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 195px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 359px;
   }
 }
 
@@ -41,5 +52,13 @@
     align-items: center;
     padding-right: 6.51%;
     padding-left: 6.51%;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8%;
+    padding-left: 8%;
   }
 }

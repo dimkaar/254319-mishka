@@ -15,4 +15,13 @@
       padding: 0;
     }
   }
+
+  @media #{$desktop-widths} {
+    padding-right:7%;
+    padding-left: 7%;
+
+    .slim-block{
+      padding: 0;
+    }
+  }
 }
