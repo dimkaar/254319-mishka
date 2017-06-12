@@ -1,5 +1,21 @@
-.about-block .second-header {
-  margin-bottom: 30px;
+.about-block {
+  .container {
+    @media #{$tablet-widths} {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .second-header {
+    margin-bottom: 30px;
+
+    @media #{$tablet-widths} {
+      width: 51%;
+      order: 1;
+    }
+  }
 }
 
 .about-block__text {
@@ -15,14 +31,20 @@
   line-height: $secondary-line-height;
   color: #000000;
 
+  @media #{$tablet-widths} {
+    width: 50%;
+    padding-right: 20%;
+    box-sizing: border-box;
+  }
+
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 60px;
-    height: 50px;
+    width: 50px;
+    height: 45px;
 
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -30,35 +52,57 @@
     background-position: 50%;
   }
 
-  &--rocket-logo {
-    width: 100%;
-  }
-
   &--flower-logo{
+    @media #{$tablet-widths} {
+      order: 2;
+      padding-right: 24%;
+    }
+
     &::before {
       background-image: url("../img/icon-feature-1.svg");
     }
   }
 
   &--money-logo {
-    &::before {
-      background-image: url("../img/icon-feature-2.svg");
+    @media #{$tablet-widths} {
+      order: 4;
     }
-  }
 
-  &--heart-logo {
-    ::before {
+    &::before {
       background-image: url("../img/icon-feature-3.svg");
     }
   }
 
-  &--clew-logo {
+  &--heart-logo {
+    @media #{$tablet-widths} {
+      order: 6;
+      padding-right: 24%;
+    }
+
     &::before {
       background-image: url("../img/icon-feature-5.svg");
     }
   }
 
+  &--clew-logo {
+    @media #{$tablet-widths} {
+      order: 3;
+    }
+
+    &::before {
+      background-image: url("../img/icon-feature-2.svg");
+    }
+  }
+
   &--rocket-logo {
+    width: 100%;
+
+    @media #{$tablet-widths} {
+      width: 50%;
+      order: 5;
+      padding-right: 14.97%;
+    }
+
     &::before {
       left: -10px;
 
@@ -67,6 +111,10 @@
   }
 
   &--gift-logo {
+    @media #{$tablet-widths} {
+      order: 7;
+    }
+
     &::before {
       background-image: url("../img/icon-feature-6.svg");
     }
