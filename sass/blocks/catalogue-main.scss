@@ -2,4 +2,9 @@
   padding-right: $primary-padding;
   padding-left: $primary-padding;
   box-sizing: border-box;
+
+  @media #{$tablet-widths} {
+    padding-right: 6.51%;
+    padding-left: 6.6%;
+  }
 }
