@@ -139,11 +139,11 @@
       display: flex;
     }
 
-    @media #{$mobile-widths} {
+    @media #{$tablet-widths} {
       display: none;
     }
 
-    @media #{$mobile-widths} {
+    @media #{$desktop-widths} {
       display: none;
     }
   }
