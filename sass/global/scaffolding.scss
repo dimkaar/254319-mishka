@@ -64,6 +64,14 @@ body {
     color: $header-color;
     text-align: left;
   }
+
+  @media #{$desktop-widths} {
+    font-family: $header-font-family;
+    font-size: 53px;
+    line-height: 57px;
+    color: $header-color;
+    text-align: left;
+  }
 }
 
 .third-header {
@@ -92,8 +100,8 @@ body {
 .text-btn {
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   box-sizing: border-box;
 
   font-size: $secondary-font-size;

@@ -1,4 +1,9 @@
 .about-block {
+
+  @media #{$desktop-widths} {
+    padding-top: 58px;
+  }
+
   .container {
     @media #{$tablet-widths} {
       display: flex;

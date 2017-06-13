@@ -11,6 +11,13 @@
     padding-right: 12.81%;
     box-sizing: border-box;
   }
+
+  @media #{$desktop-widths} {
+    order: 4;
+    width: 100%;
+    padding-right: 67.5%;
+    margin-bottom: 8px;
+  }
 }
 
 .image-block__img {
@@ -25,6 +32,10 @@
     width: 50%;
     padding-right: 6.51%;
     box-sizing: border-box;
+  }
+
+  @media #{$desktop-widths} {
+    display: none;
   }
 }
 

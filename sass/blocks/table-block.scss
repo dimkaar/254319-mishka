@@ -10,10 +10,14 @@
 
 .table-block__cell {
   display: table-cell;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 3px;
+  padding-bottom: 6px;
 
   border-bottom: 1px solid #ececec;
+
+  &:nth-of-type(2n) {
+    padding-left: 9px;
+  }
 }
 
 .table-block__link {

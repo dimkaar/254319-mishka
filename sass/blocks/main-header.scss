@@ -141,10 +141,10 @@
 
   &:first-of-type {
     @media #{$tablet-widths} {
+      order: 2;
       width: 50%;
       padding-left: 6.51%;
       box-sizing: border-box;
-      order: 2;
 
       .slim-block {
         background-color: transparent;
@@ -161,10 +161,10 @@
     }
 
     @media #{$desktop-widths} {
+      order: 1;
       width: 40%;
       padding-left: 4%;
       box-sizing: border-box;
-      order: 1;
 
       border-bottom: 1px solid #ececec;
       .main-header__nav-link {
@@ -208,11 +208,11 @@
     }
 
     @media #{$desktop-widths} {
+      order: 3;
       flex-wrap: wrap;
       width: 38%;
       padding-left: 3%;
       padding-right: 4%;
-      order: 3;
     }
   }
 
@@ -226,10 +226,10 @@
     }
 
     @media #{$desktop-widths} {
+      order: 4;
       display: flex;
       flex-wrap: wrap;
       width: 50%;
-      order: 4;
       padding-left: 4%;
       box-sizing: border-box;
 
@@ -354,19 +354,19 @@
   }
 
   @media #{$tablet-widths} {
+    order: 3;
     display: block;
     width: 50%;
     padding-right: 6.51%;
-    order: 3;
 
     line-height: $tertiary-line-height;
     text-align: right;
   }
 
   @media #{$desktop-widths} {
+    order: 5;
     display: block;
     width: 50%;
-    order: 5;
     padding-right: 4.45%;
 
     line-height: $tertiary-line-height;
