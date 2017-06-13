@@ -382,6 +382,14 @@
   padding-left: 40px;
 
   background-color: #f1f1f1;
+
+  @media #{$tablet-widths} {
+    margin-top: -62px;
+    margin-bottom: 79px;
+    padding-top: 97px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+  }
 }
 
 .main-header__title-block {
