@@ -1,7 +1,9 @@
 .about-block {
-
   @media #{$desktop-widths} {
     padding-top: 58px;
+    padding-right: 15%;
+    padding-left: 15%;
+    box-sizing: border-box;
   }
 
   .container {
@@ -17,8 +19,14 @@
     margin-bottom: 30px;
 
     @media #{$tablet-widths} {
-      width: 51%;
       order: 1;
+      width: 65%;
+    }
+
+    @media #{$desktop-widths} {
+      order: 1;
+      margin-left: -4px;
+      margin-bottom: 48px;
     }
   }
 }
@@ -29,7 +37,7 @@
   width: 83%;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 75px;
+  padding-top: 55px;
 
   font-size: $secondary-font-size;
   font-weight: 700;
@@ -42,6 +50,15 @@
     box-sizing: border-box;
   }
 
+  @media #{$desktop-widths} {
+    width: 50%;
+    margin-bottom: 56px;
+    box-sizing: border-box;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -49,7 +66,7 @@
     left: 0;
 
     width: 50px;
-    height: 45px;
+    height: 38px;
 
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -63,6 +80,11 @@
       padding-right: 24%;
     }
 
+    @media #{$desktop-widths} {
+      order: 2;
+      padding-right: 20%;
+    }
+
     &::before {
       background-image: url("../img/icon-feature-1.svg");
     }
@@ -71,6 +93,11 @@
   &--money-logo {
     @media #{$tablet-widths} {
       order: 4;
+    }
+
+    @media #{$desktop-widths} {
+      order: 4;
+      padding-right: 16%;
     }
 
     &::before {
@@ -84,6 +111,12 @@
       padding-right: 24%;
     }
 
+    @media #{$desktop-widths} {
+      order: 6;
+      margin-bottom: 90px;
+      padding-right: 20%;
+    }
+
     &::before {
       background-image: url("../img/icon-feature-5.svg");
     }
@@ -92,6 +125,11 @@
   &--clew-logo {
     @media #{$tablet-widths} {
       order: 3;
+    }
+
+    @media #{$desktop-widths} {
+      order: 3;
+      padding-right: 15%;
     }
 
     &::before {
@@ -103,9 +141,14 @@
     width: 100%;
 
     @media #{$tablet-widths} {
-      width: 50%;
       order: 5;
+      width: 50%;
       padding-right: 14.97%;
+    }
+
+    @media #{$desktop-widths} {
+      order: 5;
+      padding-right: 10%;
     }
 
     &::before {
@@ -118,6 +161,12 @@
   &--gift-logo {
     @media #{$tablet-widths} {
       order: 7;
+    }
+
+    @media #{$desktop-widths} {
+      order: 7;
+      margin-bottom: 90px;
+      padding-right: 15%;
     }
 
     &::before {
