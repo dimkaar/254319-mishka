@@ -10,12 +10,29 @@
     background-size: 41% 90%;
   }
 
+  @media #{$desktop-widths} {
+    padding-top: 68px;
+    padding-bottom: 95px;
+    padding-left: 13%;
+
+    background-color: #FFFFFF;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 11.1% 0;
+    background-size: auto 101%;
+  }
+
   .second-header {
     margin-bottom: 35px;
 
     @media #{$tablet-widths} {
       order: 1;
       width: 50%;
+    }
+
+    @media #{$desktop-widths} {
+      order: 1;
+      margin-bottom: 48px;
     }
   }
 
@@ -26,6 +43,10 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    @media #{$desktop-widths} {
+      padding-right: 9%;
+    }
   }
 }
 
@@ -35,6 +56,16 @@
 
   @media #{$tablet-widths} {
     order: 3;
+  }
+
+  @media #{$desktop-widths} {
+    order: 3;
+    margin-left: 5px;
+    margin-bottom: 38px;
+    padding-right: 12%;
+
+    font-size: $secondary-font-size;
+    line-height: $primary-line-height;
   }
 }
 
@@ -48,8 +79,12 @@
   text-decoration: none;
 
   @media #{$tablet-widths} {
-    width: 50%;
     order: 4;
+    width: 50%;
+  }
+
+  @media #{$desktop-widths} {
+    margin-left: 4px;
   }
 }
 
@@ -72,8 +107,12 @@
   }
 
   @media #{$tablet-widths} {
-    width: 25%;
     order: 5;
+    width: 25%;
+  }
+
+  @media #{$desktop-widths} {
+    width: 20%;
   }
 }
 
@@ -101,6 +140,11 @@
     border: none;
   }
 
+  @media #{$desktop-widths} {
+    background-size: 59% auto;
+    background-position: 46% 54%;
+  }
+
   &--left {
     border-right: none;
     background-image: url("../img/icon-left-arrow.svg");
@@ -115,8 +159,14 @@
   margin-bottom: 40px;
 
   @media #{$tablet-widths} {
-    width: 26.2%;
     order: 2;
+    width: 26.2%;
+  }
 
+  @media #{$desktop-widths} {
+    order: 2;
+    width: 19.9%;
+    margin-right: 2px;
+    margin-bottom: 35px;
   }
 }
