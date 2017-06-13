@@ -390,6 +390,12 @@
     padding-bottom: 80px;
     padding-left: 30px;
   }
+
+  @media #{$desktop-widths} {
+    margin-top: 130px;
+    padding-top: 94px;
+    padding-bottom: 101px;
+  }
 }
 
 .main-header__title-block {
