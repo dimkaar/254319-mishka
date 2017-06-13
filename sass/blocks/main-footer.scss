@@ -8,13 +8,17 @@
 
   background-color: #f1f1f1;
 
+  @media #{$desktop-widths} {
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
+
   .container {
     @media #{$desktop-widths} {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding-top: 50px;
       padding-right: 8%;
       padding-left: 8%;
     }
