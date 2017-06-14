@@ -8,17 +8,26 @@
 
   background-color: #f1f1f1;
 
-  @media #{$desktop-widths} {
+  @media #{$tablet-widths} {
     padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media #{$desktop-widths} {
     padding-bottom: 53px;
   }
 
   .container {
-    @media #{$desktop-widths} {
+    @media #{$tablet-widths} {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding-right: 6.51%;
+      padding-left: 6.51%;
+    }
+
+    @media #{$desktop-widths} {
       padding-right: 8%;
       padding-left: 8%;
     }
@@ -26,7 +35,7 @@
 }
 
 .main-footer__shop-logo {
-  width: 105px;
+  width: 100px;
   height: 40px;
 
   text-indent: 200%;
@@ -44,11 +53,11 @@
   }
 
   @media #{$tablet-widths} {
-    display: none;
+    display: block;
   }
 
   @media #{$desktop-widths} {
-    display: block;
+    width: 105px;
   }
 }
 
@@ -69,7 +78,7 @@
 
   fill: $mint-color;
 
-  @media #{$desktop-widths} {
+  @media #{$tablet-widths} {
     margin-left: 38px;
   }
 }

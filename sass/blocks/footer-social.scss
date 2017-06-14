@@ -11,22 +11,27 @@
 
   border-bottom: 1px solid #e5e5e5;
 
-  @media #{$desktop-widths} {
-    width: 17%;
+  @media #{$tablet-widths} {
+    width: 27%;
     margin-bottom: 0;
-    margin-left: 7%;
+    margin-left: 11%;
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
 
     border: 0;
   }
+
+  @media #{$desktop-widths} {
+    width: 17%;
+    margin-left: 7%;
+  }
 }
 
 .footer-social__social-btn {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
 
   text-indent: 100%;
   white-space: nowrap;
@@ -37,11 +42,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50%;
-
-  @media #{$desktop-widths} {
-    width: 30px;
-    height: 30px;
-  }
 
   &--inst {
     background-image: url("../img/icon-insta.svg");
