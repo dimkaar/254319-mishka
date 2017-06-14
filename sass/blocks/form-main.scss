@@ -3,6 +3,11 @@
   padding-right: $primary-padding;
   padding-left: $primary-padding;
   box-sizing: border-box;
+
+  @media #{$tablet-widths} {
+    padding-right: 6.51%;
+    padding-left: 6.51%;
+  }
 }
 
 .form-main__text {
@@ -11,4 +16,11 @@
 
   font-size: 13px;
   line-height: $tertiary-line-height;
+
+  @media #{$tablet-widths} {
+    margin-top: -7px;
+
+    font-size: $secondary-font-size;
+    line-height: $primary-line-height;
+  }
 }

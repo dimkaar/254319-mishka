@@ -79,60 +79,78 @@
             Детская игрушка
           </label>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="form__text-subtrate">
-            <p class="form__section-text">Цвет</p>
-          </div>
-          <input class="form__checkbox" name="color" type="checkbox" id="white" value="white" checked>
-          <label class="form__label form__label--checkbox" for="white">
-            Белый
-          </label>
-          <input class="form__checkbox" name="color" type="checkbox" id="grey" value="grey" checked>
-          <label class="form__label form__label--checkbox" for="grey">
-            Серый
-          </label>
-          <input class="form__checkbox" name="color" type="checkbox" id="tiffani" value="tiffani">
-          <label class="form__label form__label--checkbox" for="tiffani">
-            «Тиффани»
-          </label>
-          <input class="form__checkbox" name="color" type="checkbox" id="black" value="black">
-          <label class="form__label form__label--checkbox" for="black">
-            Черный
-          </label>
-          <input class="form__checkbox" name="color" type="checkbox" id="pink" value="pink">
-          <label class="form__label form__label--checkbox" for="pink">
-            Розовый
-          </label>
-          <input class="form__checkbox" name="color" type="checkbox" id="orange" value="orange">
-          <label class="form__label form__label--checkbox" for="orange">
-            Оранжевый
-          </label>
-        </fieldset>
+        <div class="form__colored-container">
+          <fieldset class="form__fieldset">
+            <div class="form__text-subtrate">
+              <p class="form__section-text">Цвет</p>
+            </div>
+            <div class="form__checkbox-container">
+              <input class="form__checkbox" name="color" type="checkbox" id="white" value="white" checked>
+              <label class="form__label form__label--checkbox" for="white">
+                Белый
+              </label>
+              <input class="form__checkbox" name="color" type="checkbox" id="grey" value="grey" checked>
+              <label class="form__label form__label--checkbox" for="grey">
+                Серый
+              </label>
+              <input class="form__checkbox" name="color" type="checkbox" id="tiffani" value="tiffani">
+              <label class="form__label form__label--checkbox" for="tiffani">
+                «Тиффани»
+              </label>
+              <input class="form__checkbox" name="color" type="checkbox" id="black" value="black">
+              <label class="form__label form__label--checkbox" for="black">
+                Черный
+              </label>
+              <input class="form__checkbox" name="color" type="checkbox" id="pink" value="pink">
+              <label class="form__label form__label--checkbox" for="pink">
+                Розовый
+              </label>
+              <input class="form__checkbox" name="color" type="checkbox" id="orange" value="orange">
+              <label class="form__label form__label--checkbox" for="orange">
+                Оранжевый
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset">
           <div class="form__text-subtrate">
             <p class="form__section-text">ФИО</p>
           </div>
-          <label class="form__label" for="name">Имя:</label>
-          <input class="form__text" type="text" name="FIO" id="name" placeholder="Введите ваше имя*" required>
-          <label class="form__label" for="surname">Фамилия:</label>
-          <input class="form__text" type="text" name="FIO" id="surname" placeholder="Укажите фамилию*" required>
-          <label class="form__label" for="patronymic">Отчество:</label>
-          <input class="form__text" type="text" name="FIO" id="patronymic" placeholder="Отчество, если желаете">
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--img">
-          <div class="form__text-subtrate">
-            <p class="form__section-text">Тел</p>
+          <div class="form__input-container">
+            <div class="form__row-container">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__text" type="text" name="FIO" id="name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="form__row-container">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__text" type="text" name="FIO" id="surname" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="form__row-container">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="form__text" type="text" name="FIO" id="patronymic" placeholder="Отчество, если желаете">
+            </div>
           </div>
-          <input class="form__tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-          <span class="form__input-img form__input-img--tel"></span>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--img">
-          <div class="form__text-subtrate">
-            <p class="form__section-text">E-mail</p>
-          </div>
-          <input class="form__email" type="email" name="email" placeholder="Ваш Email*" required>
-          <span class="form__input-img form__input-img--email"></span>
-        </fieldset>
+        <div class="form__colored-container">
+          <fieldset class="form__fieldset form__fieldset--img">
+            <div class="form__contacts-container">
+              <div class="form__text-subtrate">
+                <p class="form__section-text">Тел</p>
+              </div>
+              <input class="form__tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
+              <span class="form__input-img form__input-img--tel"></span>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--img">
+            <div class="form__contacts-container">
+              <div class="form__text-subtrate">
+                <p class="form__section-text">E-mail</p>
+              </div>
+              <input class="form__email" type="email" name="email" placeholder="Ваш Email*" required>
+              <span class="form__input-img form__input-img--email"></span>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset">
           <div class="form__text-subtrate">
             <p class="form__section-text">Доп</p>
