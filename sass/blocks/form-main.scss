@@ -9,8 +9,8 @@
 
 .form-main__text {
   margin-top: 0;
-  padding-right: $primary-padding;
   margin-bottom: 0;
+  padding-right: $primary-padding;
   padding-left: $primary-padding;
 
   font-size: 13px;
@@ -23,5 +23,13 @@
 
     font-size: $secondary-font-size;
     line-height: $primary-line-height;
+  }
+
+  @media #{$desktop-widths} {
+    width: 56%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

@@ -384,7 +384,6 @@
 
   @media #{$tablet-widths} {
     margin-top: -62px;
-    margin-right: -1%;
     margin-bottom: 79px;
     padding-top: 97px;
     padding-bottom: 80px;
@@ -399,9 +398,5 @@
 
   .first-header {
     margin-bottom: 0;
-
-    @media #{$tablet-widths} {
-      margin-left: -1%;
-    }
   }
 }
