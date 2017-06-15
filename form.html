@@ -116,12 +116,18 @@
             <p class="form__content-header">ФИО</p>
           </div>
           <div class="form__content-container">
-            <label class="form__label" for="name">Имя:</label>
-            <input class="form__text" type="text" name="FIO" id="name" placeholder="Введите ваше имя*" required>
-            <label class="form__label" for="surname">Фамилия:</label>
-            <input class="form__text" type="text" name="FIO" id="surname" placeholder="Укажите фамилию*" required>
-            <label class="form__label" for="patronymic">Отчество:</label>
-            <input class="form__text" type="text" name="FIO" id="patronymic" placeholder="Отчество, если желаете">
+            <div class="form__row-container">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__text" type="text" name="FIO" id="name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="form__row-container">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__text" type="text" name="FIO" id="surname" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="form__row-container">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="form__text" type="text" name="FIO" id="patronymic" placeholder="Отчество, если желаете">
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--img form__fieldset--tel">
