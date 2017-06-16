@@ -7,8 +7,6 @@
 }
 
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
   margin-right: 0;
   margin-left: 0;
   padding-top: 24px;
@@ -21,10 +19,10 @@
 
   @media #{$tablet-widths} {
     flex-direction: row;
-    padding-top: 24px;
-    padding-right: 7%;
+    padding-top: 7px;
+    padding-right: 6.4%;
     padding-bottom: 0;
-    padding-left: 6.75%;
+    padding-left: 6.7%;
   }
 
   @media #{$desktop-widths} {
@@ -37,18 +35,47 @@
     @media #{$tablet-widths} {
       padding-bottom: 26px;
     }
+
+    .form__header-substrate {
+      @media #{$tablet-widths} {
+        margin-top: 8px;
+      }
+    }
+
+    .form__content-container {
+      @media #{$tablet-widths} {
+        margin-right: 6.2%;
+      }
+
+      @media #{$desktop-widths} {
+        margin-right: 11%;
+      }
+    }
   }
 
   &--color {
     @media #{$tablet-widths} {
-      padding-top: 67px;
+      padding-top: 50px;
       padding-bottom: 26px;
+    }
+
+    .form__header-substrate {
+      @media #{$tablet-widths} {
+        margin-top: 8px;
+      }
     }
 
     .form__content-container {
       @media #{$tablet-widths} {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 6.1%;
+      }
+
+      @media #{$desktop-widths} {
+        width: 78%;
+        margin-right: 11%;
       }
     }
   }
@@ -57,26 +84,26 @@
     padding-top: 9px;
 
     @media #{$tablet-widths} {
-      padding-top: 67px;
+      padding-top: 58px;
       padding-bottom: 14px;
     }
 
     .form__content-container {
       @media #{$tablet-widths} {
-        margin-top: -13px;
-        padding-right: 5.2%;
-        box-sizing: border-box;
+        width: 75%;
+        margin-top: 4px;
       }
 
       @media #{$desktop-widths} {
-        margin-left: 11.4%;
-        padding-right: 11%;
+        width: 88.9%;
+        padding-right: 19.25%;
+        box-sizing: border-box;
       }
     }
 
     .form__label {
       @media #{$tablet-widths} {
-        margin-right: 6%;
+        margin-right: 7%;
       }
 
       @media #{$desktop-widths} {
@@ -96,11 +123,23 @@
       padding-top: 53px;
     }
 
+    .form__content-container {
+      @media #{$tablet-widths} {
+        width: 75%;
+        margin-top: 7px;
+      }
+
+      @media #{$desktop-widths} {
+        width: 80%;
+        padding-right: 8.8%;
+      }
+    }
+
     .form__header-substrate {
       margin-bottom: 24px;
 
       @media #{$tablet-widths} {
-        margin-top: 14px;
+        margin-top: 5px;
         margin-bottom: 10px;
       }
     }
@@ -114,17 +153,33 @@
       padding-bottom: 31px;
     }
 
+    .form__content-container {
+      @media #{$tablet-widths} {
+        width: 75%;
+        margin-top: 7px;
+      }
+
+      @media #{$desktop-widths} {
+        width: 80%;
+        padding-right: 8.8%;
+      }
+    }
+
     .form__header-substrate {
       margin-bottom: 24px;
 
       @media #{$tablet-widths} {
-        margin-top: 14px;
+        margin-top: 5px;
         margin-bottom: 10px;
       }
     }
 
     .form__content-header {
       width: 31%;
+
+      @media #{$tablet-widths} {
+        width: auto;
+      }
     }
   }
 
@@ -132,12 +187,29 @@
     padding-top: 12px;
 
     @media #{$tablet-widths} {
-      padding-top: 67px;
+      padding-top: 50px;
       padding-bottom: 44px;
     }
 
     @media #{$desktop-widths} {
       padding-bottom: 40px;
+    }
+
+    .form__header-substrate {
+      @media #{$tablet-widths} {
+        margin-top: 5px;
+      }
+    }
+
+    .form__content-container {
+      @media #{$tablet-widths} {
+        width: 75%;
+      }
+
+      @media #{$desktop-widths} {
+        width: 80.3%;
+        margin-right: 8.7%;
+      }
     }
   }
 
@@ -156,21 +228,38 @@
   }
 }
 
+.form__fieldset-container {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
 .form__header-substrate {
   position: relative;
   z-index: 1;
 
-  width: 100%;
   margin-bottom: 33px;
   padding-top: 8px;
 
-  border-bottom: 1px solid $mint-color;
+  @media #{$mobile-widths} {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $mint-color;
+    }
+  }
 
   @media #{$tablet-widths} {
-    width: 30%;
-    margin-bottom: 0;
-
-    border: none;
+    &::before {
+      background: transparent;
+    }
   }
 }
 
@@ -190,19 +279,19 @@
   text-transform: uppercase;
 
   background-color: $primary-bg-color;
+
+  @media #{$tablet-widths} {
+    position: static;
+  }
 }
 
 .form__content-container {
   @media #{$tablet-widths} {
-    width: 81%;
-    margin-top: -25px;
-    margin-left: 24.9%;
+    width: 69%;
   }
 
   @media #{$desktop-widths} {
-    width: 81%;
-    margin-top: -25px;
-    margin-left: 11.1%;
+    width: 78%;
   }
 }
 
@@ -278,13 +367,11 @@
     @media #{$tablet-widths} {
       margin-bottom: 43px;
       padding-top: 15px;
-      padding-left: 15%;
+      padding-left: 17.3%;
     }
 
-    @media #{$tablet-widths} {
-      margin-bottom: 43px;
-      padding-top: 15px;
-      padding-left: 10%;
+    @media #{$desktop-widths} {
+      padding-left: 10.4%;
     }
 
     &::before {
@@ -312,15 +399,16 @@
     padding-left: 24.2%;
 
     @media #{$tablet-widths} {
-      width: 34%;
+      width: 26.2%;
       margin-bottom: 43px;
       padding-top: 15px;
-      padding-left: 15%;
+      padding-left: 17.3%;
     }
 
-    @media #{$tablet-widths} {
-      width: 22.5%;
-      padding-left: 10%;
+    @media #{$desktop-widths} {
+      width: 33%;
+      padding-left: 10.5%;
+      box-sizing: border-box;
     }
 
     &::before {
@@ -378,7 +466,8 @@
 .form__tel,
 .form__email {
   @media #{$tablet-widths} {
-    width: 93.7%;
+    width: 100%;
+    padding-right: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
 
@@ -415,7 +504,7 @@
       right: 75px;
     }
 
-    @media #{$tablet-widths} {
+    @media #{$desktop-widths} {
       top: 60px;
       right: 22.6%;
     }
@@ -438,7 +527,7 @@
       right: 68px;
     }
 
-    @media #{$tablet-widths} {
+    @media #{$desktop-widths} {
       right: 22%;
     }
   }
@@ -455,8 +544,6 @@
   border: 2px solid #000000;
 
   @media #{$tablet-widths} {
-    width: 93.4%;
-
     font-size: 19px;
   }
 
