@@ -58,16 +58,36 @@
     display: none;
   }
 
-  .main-header__nav--opened .main-header__menu-wrapper {
-    position: absolute;
-    top: 84px;
-    left: 0;
+  .main-header__nav--opened .main-header__nav-list {
+    &:first-of-type {
+      position: absolute;
+      top: 84px;
+      left: 0;
 
-    width: 100%;
+      display: block;
+    }
+
+    &:nth-of-type(2) {
+      position: absolute;
+      top: 220px;
+      left: 0;
+
+      display: block;
+    }
   }
 
-  .main-header__nav--opened > .main-header__nav-list {
-    display: block;
+  .main-header__nav--nojs .main-header__nav-list {
+    &:first-of-type {
+      position: static;
+
+      display: block;
+    }
+
+    &:nth-of-type(2) {
+      position: static;
+
+      display: block;
+    }
   }
 }
 
