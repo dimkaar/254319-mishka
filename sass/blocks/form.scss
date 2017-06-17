@@ -282,6 +282,8 @@
 
   @media #{$tablet-widths} {
     position: static;
+
+    width: auto;
   }
 }
 
@@ -457,6 +459,7 @@
 .form__text {
   @media #{$tablet-widths} {
     margin-bottom: 36px;
+    padding-right: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
     font-size: 19px;
