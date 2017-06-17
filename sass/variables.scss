@@ -12,6 +12,6 @@ $header-font-family: "Open Sans Bold", Verdana, sans-serif;
 $mint-color: #63d1bb;
 $white-text-color: #ffffff;
 $primary-padding: 9.375%;
-$mobile-widths: #{"(min-width: 320px)"};
+$mobile-widths: #{"(max-width: 767px)"};
 $tablet-widths: #{"(min-width: 768px)"};
 $desktop-widths: #{"(min-width: 1250px)"};
