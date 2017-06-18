@@ -10,7 +10,8 @@
 
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    align-content: stretch;
     margin-bottom: 53px;
   }
 
@@ -99,7 +100,9 @@
       }
 
       @media #{$desktop-widths} {
-        width: 70%;
+        width: 80%;
+        padding-right: 10%;
+        box-sizing: border-box;
       }
     }
 
