@@ -1,0 +1,123 @@
+.product-article {
+  position: relative;
+
+  @media #{$desktop-widths} {
+    padding-top: 126px;
+
+    background-color: $primary-bg-color;
+    background-image: url("../img/triple-set-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 42% 79%;
+    background-position: 86% 43%;
+  }
+
+  .container {
+    @media #{$tablet-widths} {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @media #{$desktop-widths} {
+      padding-left: 22%;
+      box-sizing: border-box;
+    }
+  }
+
+  .second-header {
+    margin-bottom: 10px;
+
+    @media #{$tablet-widths} {
+      width: 85%;
+      margin-bottom: 55px;
+    }
+
+    @media #{$desktop-widths} {
+      order: 2;
+      margin-left: 4.5%;
+      margin-bottom: 49px;
+    }
+  }
+
+  .table-block {
+    @media #{$tablet-widths} {
+      width: 50.1%;
+      margin-bottom: 55px;
+      padding-right: 6.51%;
+      box-sizing: border-box;
+    }
+
+    @media #{$desktop-widths} {
+      order: 4;
+      margin-bottom: 110px;
+      padding-right: 16.6%;
+    }
+  }
+}
+
+.product-article__promo-text {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  line-height: $secondary-line-height;
+  color: $mint-color;
+  text-transform: uppercase;
+
+  @media #{$tablet-widths} {
+    width: 15%;
+    margin-bottom: 45px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media #{$desktop-widths} {
+    order: 1;
+    width: 10%;
+    margin-left: -15%;
+
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+.product-article__text {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+
+  line-height: $tertiary-line-height;
+
+  @media #{$tablet-widths} {
+    width: 50.1%;
+    margin-top: 0;
+    margin-bottom: 45px;
+    padding-right: 6.51%;
+  }
+
+  @media #{$desktop-widths} {
+    order: 3;
+    margin-bottom: 49px;
+    padding-right: 16%;
+
+    font-size: $secondary-font-size;
+    line-height: $primary-line-height;
+  }
+}
+
+.product-article__btn {
+  margin-bottom: 35px;
+
+  @media #{$tablet-widths} {
+    width: 43.7%;
+    margin-bottom: 50px;
+  }
+
+  @media #{$desktop-widths} {
+    order: 5;
+    width: 33.4%;
+    margin-bottom: 95px;
+  }
+}

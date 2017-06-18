@@ -1,0 +1,20 @@
+.catalogue-main {
+  padding-top: 30px;
+  padding-right: $primary-padding;
+  padding-left: $primary-padding;
+  box-sizing: border-box;
+
+  @media #{$tablet-widths} {
+    padding-right: 6.51%;
+    padding-left: 6.6%;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+}

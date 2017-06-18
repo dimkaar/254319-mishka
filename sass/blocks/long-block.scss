@@ -1,0 +1,12 @@
+.long-block {
+  width: 100%;
+  padding-top: 30px;
+  box-sizing: border-box;
+
+  background-color: $primary-bg-color;
+  border-bottom: 2px solid red;
+
+  @media #{$tablet-widths} {
+    padding-top: 60px;
+  }
+}

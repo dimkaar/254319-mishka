@@ -1,0 +1,42 @@
+.map-block {
+  content: "";
+  position: relative;
+
+  width: 100%;
+  height: 457px;
+  margin-bottom: 40px;
+
+  background-color: $primary-bg-color;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 145px;
+    left: 105px;
+
+    width: 80px;
+    height: 125px;
+
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+
+    @media #{$tablet-widths} {
+      top: 195px;
+      left: 325px;
+
+      background-size: 100% auto;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    width: 42%;
+    margin-top: 11px;
+    margin-bottom: 0;
+  }
+}
