@@ -121,6 +121,14 @@
 
 .main-header__logo {
   display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header__logo-img {
@@ -299,6 +307,25 @@
   }
 }
 
+.main-header__nav-item {
+  &:hover {
+    opacity: 0.6;
+
+    .main-header__svg {
+      fill: $mint-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .main-header__svg {
+      fill: $mint-color;
+    }
+  }
+
+}
+
 .main-header__nav-link {
   font-size: 17px;
   font-weight: 700;
@@ -310,27 +337,6 @@
     position: relative;
 
     box-sizing: border-box;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 36%;
-      left: 10%;
-      width: 21px;
-      height: 21px;
-
-      background-color: $primary-bg-color;
-      background-image: url("../img/icon-search.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: 50%;
-      opacity: 0.3;
-
-      @media #{$tablet-widths} {
-        top: 39%;
-        left: 39%;
-      }
-    }
 
     @media #{$tablet-widths} {
       padding-left: 0;
@@ -358,27 +364,6 @@
 
     box-sizing: border-box;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 36%;
-      left: 10%;
-
-      width: 21px;
-      height: 21px;
-
-      background-color: $primary-bg-color;
-      background-image: url("../img/icon-cart.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: 50%;
-      opacity: 0.3;
-
-      @media #{$tablet-widths} {
-        left: 13%;
-      }
-    }
-
     @media #{$tablet-widths} {
       padding-left: 31%;
       padding-top: 32px;
@@ -393,6 +378,30 @@
       padding-bottom: 34px;
 
       border-left: 1px solid #ececec;
+    }
+  }
+}
+
+.main-header__svg {
+  position: absolute;
+  top: 36%;
+  left: 10%;
+
+  width: 21px;
+  height: 21px;
+
+  opacity: 0.3;
+
+  &--search {
+    @media #{$tablet-widths} {
+      top: 39%;
+      left: 39%;
+    }
+  }
+
+  &--cart {
+    @media #{$tablet-widths} {
+      left: 13%;
     }
   }
 }
