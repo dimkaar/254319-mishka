@@ -27,6 +27,22 @@
       padding-left: 7%;
     }
   }
+
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+
+    .product-types__img {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    .container {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product-types .container {
@@ -54,7 +70,7 @@
 }
 
 .product-types__img {
-  opacity: 0.2;
+  opacity: 0.5;
 
   &--cube {
     margin-right: -10px;
