@@ -392,6 +392,14 @@
         width: 48px;
         height: 48px;
       }
+
+      &:hover {
+        border-color: $mint-color;
+      }
+
+      &:active {
+        border-color: #c7c7c7;
+      }
     }
   }
 
@@ -430,6 +438,14 @@
         width: 50px;
         height: 48px;
       }
+
+      &:hover {
+        border-color: $mint-color;
+      }
+
+      &:active {
+        border-color: #c7c7c7;
+      }
     }
   }
 }
@@ -454,6 +470,15 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+  outline: none;
+
+  &:hover {
+    border-color: $mint-color;
+  }
+
+  &:active {
+    border-color: $mint-color;
+  }
 }
 
 .form__text {
@@ -482,6 +507,14 @@
   @media #{$desktop-widths} {
     width: 86.7%;
   }
+
+  &:hover .form__input-img {
+      fill: $mint-color;
+    }
+
+  &:active .form__input-img {
+      fill: $mint-color;
+    }
 }
 
 .form__input-img {
