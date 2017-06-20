@@ -483,10 +483,9 @@
 
 .form__text {
   @media #{$tablet-widths} {
+    margin-top: -14px;
     margin-bottom: 36px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+    padding: 15px;
     font-size: 19px;
   }
 }
@@ -495,9 +494,8 @@
 .form__email {
   @media #{$tablet-widths} {
     width: 100%;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+    margin-top: -14px;
+    padding: 15px;
 
     font-size: 19px;
 
@@ -508,12 +506,14 @@
     width: 86.7%;
   }
 
-  &:hover .form__input-img {
+  &:hover + .form__input-img {
       fill: $mint-color;
+      opacity: 1;
     }
 
-  &:active .form__input-img {
+  &:active + .form__input-img {
       fill: $mint-color;
+      opacity: 1;
     }
 }
 
@@ -578,6 +578,7 @@
   line-height: 18px;
 
   border: 2px solid #000000;
+  outline: none;
 
   @media #{$tablet-widths} {
     font-size: 19px;
@@ -585,6 +586,11 @@
 
   @media #{$desktop-widths} {
     width: 86.6%;
+  }
+
+  &:hover,
+  &:active {
+    border-color: $mint-color;
   }
 }
 
