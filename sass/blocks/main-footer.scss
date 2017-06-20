@@ -76,6 +76,19 @@
   line-height: 18px;
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    .main-footer__htmlacademy-logo {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .main-footer__htmlacademy-logo {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-footer__htmlacademy-logo {

@@ -29,7 +29,9 @@
 }
 
 .footer-social__social-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
 
@@ -37,13 +39,13 @@
 
   &:hover {
     .footer-social__svg {
-      fill: $mint-color;
+      fill: #46c1ae;
     }
   }
 
   &:active {
     .footer-social__svg {
-      fill: $mint-color;
+      fill: #46c1ae;
       opacity: 0.3;
     }
   }
