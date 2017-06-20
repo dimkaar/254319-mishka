@@ -38,15 +38,7 @@
   width: 100px;
   height: 40px;
 
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-
   background-color: #f1f1f1;
-  background-image: url("../img/logo-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%;
 
   @media #{$mobile-widths} {
     display: none;
@@ -58,6 +50,19 @@
 
   @media #{$desktop-widths} {
     width: 105px;
+  }
+
+  &:hover {
+    .main-footer__logo-svg {
+      fill: $mint-color;
+    }
+  }
+
+  &:active {
+    .main-footer__logo-svg {
+      fill: $mint-color;
+      opacity: 0.3;
+    }
   }
 }
 

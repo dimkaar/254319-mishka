@@ -33,25 +33,18 @@
   width: 30px;
   height: 30px;
 
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-decoration: none;
-
   background-color: #f1f1f1;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%;
 
-  &--inst {
-    background-image: url("../img/icon-insta.svg");
+  &:hover {
+    .footer-social__svg {
+      fill: $mint-color;
+    }
   }
 
-  &--fb {
-    background-image: url("../img/icon-fb.svg");
-  }
-
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
+  &:active {
+    .footer-social__svg {
+      fill: $mint-color;
+      opacity: 0.3;
+    }
   }
 }
