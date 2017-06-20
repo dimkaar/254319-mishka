@@ -4,11 +4,13 @@
   @media #{$desktop-widths} {
     padding-top: 126px;
 
-    background-color: $primary-bg-color;
-    background-image: url("../img/triple-set-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 42% 79%;
+    background-image: url("../img/triple-set-desktop@1x.jpg");
+    background-size: 42% 80%;
     background-position: 86% 43%;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/triple-set-desktop@2x.jpg");
+    }
   }
 
   .container {
