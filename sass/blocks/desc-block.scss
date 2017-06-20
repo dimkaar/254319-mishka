@@ -1,4 +1,6 @@
 .desc-block {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,21 +22,41 @@
   }
 
   @media #{$tablet-widths}{
-    margin-top: -62px;
+    margin-top: -65px;
     padding-top: 125px;
 
-    background-size: 100% auto;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+
+      width: 100%;
+      height: 23px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: cover;
+      background-position: 50%;
+    }
   }
 
   @media #{$desktop-widths}{
     margin-top: -61px;
     padding-top: 153px;
 
-    background-size: contain;
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
+    }
+
+    &::after {
+      bottom: -20px;
+      height: 36px;
     }
   }
 }

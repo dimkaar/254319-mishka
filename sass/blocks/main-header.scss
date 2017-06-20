@@ -214,6 +214,7 @@
 
       .main-header__nav-link {
         font-size: $primary-font-size;
+        border-bottom: 1px solid #ececec;
       }
     }
 
@@ -226,6 +227,7 @@
       border-bottom: 1px solid #ececec;
       .main-header__nav-link {
         font-size: $secondary-font-size;
+        border-bottom: none;
       }
 
       .main-header__nav-item {
