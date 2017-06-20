@@ -8,16 +8,17 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 41% 90%;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media #{$desktop-widths} {
     padding-top: 68px;
     padding-bottom: 185px;
     padding-left: 13%;
-
-    background-color: #FFFFFF;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
+    
     background-position: 11.1% 0;
     background-size: auto 83.9%;
   }

@@ -78,6 +78,7 @@
   }
 
   @media #{$desktop-widths} {
+    z-index: 5;
     display: table;
 
     font-size: $secondary-font-size;
