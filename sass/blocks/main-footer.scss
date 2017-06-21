@@ -92,11 +92,7 @@
 }
 
 .main-footer__htmlacademy-logo {
-  margin-left: 20px;
+  margin-left: 38px;
 
   fill: $mint-color;
-
-  @media #{$tablet-widths} {
-    margin-left: 38px;
-  }
 }
