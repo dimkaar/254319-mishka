@@ -63,7 +63,7 @@
   .main-header__nav--opened .main-header__nav-list {
     &:first-of-type {
       position: absolute;
-      top: 81px;
+      top: 80px;
       left: 0;
 
       display: block;
@@ -71,7 +71,7 @@
 
     &:nth-of-type(2) {
       position: absolute;
-      top: 217px;
+      top: 216px;
       left: 0;
 
       display: block;
@@ -421,6 +421,7 @@
     order: 3;
     display: block;
     width: 50%;
+    margin-top: 7px;
     padding-right: 6.51%;
 
     line-height: $tertiary-line-height;
@@ -448,7 +449,7 @@
   background-color: #f1f1f1;
 
   @media #{$tablet-widths} {
-    margin-top: -62px;
+    margin-top: -65px;
     margin-bottom: 79px;
     padding-top: 97px;
     padding-bottom: 80px;
@@ -463,5 +464,9 @@
 
   .first-header {
     margin-bottom: 0;
+  }
+
+  &::after {
+
   }
 }

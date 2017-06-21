@@ -1,6 +1,7 @@
 var navMain = document.querySelector('.main-header__nav');
 var navToggle = document.querySelector('.main-header__toggle');
-var buyBtn = document.querySelector('.product-article__btn');
+var indexBuyBtn = document.querySelector('.product-article__btn');
+var catalogBuyBtn = document.querySelector('.about-manufacture__btn');
 var modalWindow = document.querySelector('.modal-block');
 var bodyOverlay = document.querySelector('.body-overlay');
 
@@ -16,8 +17,7 @@ navToggle.addEventListener('click', function(){
   }
 });
 
-
-buyBtn.addEventListener('click', function() {
+indexBuyBtn.addEventListener('click', function() {
   event.preventDefault();
   if(modalWindow.style.display = 'none') {
     modalWindow.style.display = 'flex';
@@ -27,6 +27,15 @@ buyBtn.addEventListener('click', function() {
   }
 });
 
+catalogBuyBtn.addEventListener('click', function() {
+  event.preventDefault();
+  if(modalWindow.style.display = 'none') {
+    modalWindow.style.display = 'flex';
+    bodyOverlay.style.display = 'block';
+  } else  {
+    return 0;
+  }
+});
 
 window.addEventListener('keydown', function(event) {
   if (event.keyCode === 27) {
