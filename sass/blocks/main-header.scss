@@ -41,6 +41,8 @@
   &--opened {
     .main-header__toggle {
       @media #{$mobile-widths} {
+        height: 18px;
+
         background-image: url("../img/icon-menu-close.svg");
       }
     }
@@ -98,7 +100,7 @@
 
   display: block;
   width: 22px;
-  height: 22px;
+  height: 14px;
 
   text-indent: 200%;
   white-space: nowrap;
