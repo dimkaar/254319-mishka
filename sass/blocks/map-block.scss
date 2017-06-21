@@ -4,7 +4,7 @@
 
   width: 100%;
   height: 457px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   background-color: $primary-bg-color;
   background-image: url("../img/map-mobile@1x.jpg");
@@ -39,11 +39,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 145px;
-    left: 105px;
+    top: 165px;
+    left: 122px;
 
-    width: 80px;
-    height: 125px;
+    width: 68px;
+    height: 100px;
 
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
@@ -53,6 +53,9 @@
     @media #{$tablet-widths} {
       top: 145px;
       left: 335px;
+
+      width: 80px;
+      height: 125px;
 
       background-size: 100% auto;
     }

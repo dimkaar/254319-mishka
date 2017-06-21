@@ -1,4 +1,5 @@
 .contacts-block {
+  padding-top: 19px;
   padding-bottom: 35px;
 
   @media #{$tablet-widths} {
@@ -31,7 +32,7 @@
   }
 
   .third-header {
-    margin-bottom: 30px;
+    margin-bottom: 2px;
 
     @media #{$tablet-widths}{
       position: relative;
@@ -70,7 +71,7 @@
 }
 
 .contacts-block__table {
-  margin-bottom: 45px;
+  margin-bottom: 31px;
 
   @media #{$tablet-widths} {
     display: flex;
@@ -102,7 +103,7 @@
   border: none;
 
   &:nth-of-type(2n) {
-    padding-left: 15px;
+    padding-left: 30px;
   }
 
   &:last-of-type {
