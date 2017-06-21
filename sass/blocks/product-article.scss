@@ -1,5 +1,6 @@
 .product-article {
   position: relative;
+  padding-bottom: 41px;
 
   @media #{$desktop-widths} {
     padding-top: 126px;
@@ -29,7 +30,7 @@
   }
 
   .second-header {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     @media #{$tablet-widths} {
       width: 85%;
@@ -61,7 +62,7 @@
 
 .product-article__promo-text {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   font-size: $secondary-font-size;
   font-weight: 700;
@@ -88,7 +89,7 @@
 }
 
 .product-article__text {
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   box-sizing: border-box;
 
   line-height: $tertiary-line-height;
@@ -111,8 +112,6 @@
 }
 
 .product-article__btn {
-  margin-bottom: 35px;
-
   @media #{$tablet-widths} {
     width: 43.7%;
     margin-bottom: 50px;

@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  padding-top: 30px;
+  padding-top: 26px;
   box-sizing: border-box;
 
   background-color: $primary-bg-color;
@@ -19,19 +19,21 @@
       left: 0;
       right: 0;
 
-      width: 100%;
+      width: 105%;
       height: 6px;
 
       background-color: $primary-bg-color;
       background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
-      background-size: cover;
+      background-size: contain;
       background-position: 50%;
     }
 
     @media #{$tablet-widths} {
       &::after {
         height: 16px;
+        
+        background-size: cover;
       }
     }
 

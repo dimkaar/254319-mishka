@@ -21,6 +21,8 @@
 }
 
 .image-block__img {
+  margin-bottom: 23px;
+
   &:first-of-type {
     @media #{mobile-widths} {
       display: block;
@@ -58,8 +60,13 @@
 }
 
 .image-block__img-text {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
-  font-size: $secondary-line-height;
+  font-size: $secondary-font-size;
   line-height: $tertiary-line-height;
+
+  @media #{$tablet-widths} {
+    font-size: 20px;
+    line-height: $tertiary-line-height;
+  }
 }
