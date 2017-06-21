@@ -17,9 +17,15 @@
   }
 
   .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9%;
+    padding-right: 11.4%;
+
     @media #{$tablet-widths} {
-      padding-right: $primary-padding;
-      padding-left: $primary-padding;
+      padding-right: 12%;
+      padding-left: 10.7%;
     }
 
     @media #{$desktop-widths} {
@@ -45,14 +51,6 @@
   }
 }
 
-.product-types .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 9%;
-  padding-right: 11.4%;
-}
-
 .product-types__text {
   width: 50%;
   margin-top: 26px;
@@ -63,8 +61,7 @@
   line-height: $tertiary-line-height;
   color: $white-text-color;
 
-  @media #{$desktop-widths} {
-    width: 20%;
+  @media #{$tablet-widths} {
 
     font-size: 20px;
     line-height: $primary-line-height;

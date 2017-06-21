@@ -61,8 +61,6 @@
   }
 
   .main-header__nav--opened .main-header__nav-list {
-    z-index: 5;
-    
     &:first-of-type {
       position: absolute;
       top: 79px;
@@ -176,6 +174,8 @@
 }
 
 .main-header__nav-list {
+  z-index: 5;
+
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -218,7 +218,6 @@
 
       .main-header__nav-link {
         font-size: $primary-font-size;
-        border-bottom: 1px solid #ececec;
       }
     }
 
