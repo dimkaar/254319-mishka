@@ -3,7 +3,11 @@
 
   @media #{$tablet-widths} {
     margin-top: -7px;
-    padding-top: 0;
+    padding-top: 69px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 130px;
   }
 }
 

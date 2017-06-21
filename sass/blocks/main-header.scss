@@ -459,7 +459,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -11px;
+      bottom: -10px;
       left: 0;
       right: 0;
 
@@ -468,7 +468,7 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: contain;
+      background-size: cover;
     }
   }
 
@@ -476,6 +476,12 @@
     margin-top: -62px;
     padding-top: 94px;
     padding-bottom: 101px;
+
+    &::after {
+      bottom: -22px;
+
+      height: 40px;
+    }
   }
 
   .first-header {
