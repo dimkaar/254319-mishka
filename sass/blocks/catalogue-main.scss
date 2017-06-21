@@ -5,6 +5,7 @@
   box-sizing: border-box;
 
   @media #{$tablet-widths} {
+    padding-top: 76px;
     padding-right: 6.51%;
     padding-left: 6.6%;
   }
@@ -14,6 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 131px;
     padding-right: 8%;
     padding-left: 8%;
   }
