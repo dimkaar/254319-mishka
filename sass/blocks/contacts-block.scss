@@ -10,6 +10,7 @@
   @media #{$desktop-widths} {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 65px;
     padding-bottom: 105px;
   }
 
@@ -63,7 +64,7 @@
 
     @media #{$desktop-widths} {
       margin-top: 81px;
-      margin-bottom: -55px;
+      margin-bottom: -70px;
       margin-left: -5px;
 
       &::after {
@@ -111,6 +112,10 @@
 
     @media #{$tablet-widths} {
       padding-left: 28px;
+    }
+
+    @media #{$desktop-widths} {
+      padding-left: 16px;
     }
   }
 

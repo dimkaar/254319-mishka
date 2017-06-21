@@ -14,6 +14,28 @@
   background-color: #ffffff;
   border-top: 2px solid #c7c7c7;
   box-shadow: 0 30px 30px -30px #c6c6c6;
+
+  @media #{$tablet-widths} {
+    left: 13%;
+
+    width: 74%;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: 2px solid #c7c7c7;
+    box-shadow: 0 10px 50px 5px #c6c6c6;
+  }
+
+  @media #{$desktop-widths} {
+    left: 27.2%;
+
+    width: 45.6%;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: 2px solid #c7c7c7;
+    box-shadow: 0 10px 50px 5px #c6c6c6;
+  }
 }
 
 .modal-block .second-header {
@@ -24,6 +46,18 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media #{$desktop-widths} {
+    width: 100%;
+
+    font-size: 30px;
+  }
+
+  @media #{$tablet-widths} {
+    width: 100%;
+
+    font-size: 30px;
+  }
 }
 
 .modal-block__text {
@@ -39,6 +73,14 @@
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
+
+  @media #{$tablet-widths} {
+    justify-content: center;
+  }
+
+  @media #{$desktop-widths} {
+    justify-content: center;
+  }
 }
 
 .modal-block__size-btns > .modal-block__btn {
@@ -46,12 +88,21 @@
 
   padding-top: 9px;
   padding-bottom: 9px;
+
+  @media #{$tablet-widths} {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 
 .modal-block__btn {
   width: 78px;
 
   border: 2px solid #c7c7c7;
+
+  @media #{$tablet-widths} {
+    width: 106px;
+  }
 
   &--active {
     border-color: $mint-color;
@@ -69,5 +120,15 @@
 
     background-color: $mint-color;
     border-color: $mint-color;
+
+    @media #{$tablet-widths} {
+      width: 72%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media #{$desktop-widths} {
+      width: 78%;
+    }
   }
 }
