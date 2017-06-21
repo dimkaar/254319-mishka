@@ -1,6 +1,9 @@
 .review-block {
+  padding-top: 27px;
+  padding-bottom: 9px;
 
   @media #{$tablet-widths} {
+    padding-top: 0;
     padding-bottom: 65px;
 
     background-color: #FFFFFF;
@@ -24,7 +27,8 @@
   }
 
   .second-header {
-    margin-bottom: 35px;
+    margin-left: -2px;
+    margin-bottom: 24px;
 
     @media #{$tablet-widths} {
       order: 1;
@@ -53,7 +57,7 @@
 
 .review-block__text {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   @media #{$tablet-widths} {
     order: 3;
@@ -90,8 +94,8 @@
 }
 
 .review-block__author-nick {
-  margin-top: 8px;
-  margin-bottom: 30px;
+  margin-top: 6px;
+  margin-bottom: 32px;
 
   @media #{$tablet-widths} {
     margin-bottom: 0;
@@ -120,9 +124,9 @@
 .review-block__arrow-btn {
   display: block;
   width: 50%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 35px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin-bottom: 38px;
   box-sizing: border-box;
 
   text-indent: 200%;
@@ -131,8 +135,8 @@
 
   background-color: $primary-bg-color;
   background-repeat: no-repeat;
-  background-size: 45% auto;
-  background-position: 50%;
+  background-size: 40% auto;
+  background-position: 48% 50%;
   border: 1px solid #ececec;
 
   @media #{$tablet-widths} {
