@@ -3,14 +3,14 @@
   padding-bottom: 9px;
 
   @media #{$tablet-widths} {
-    padding-top: 0;
-    padding-bottom: 65px;
+    padding-top: 77px;
+    padding-bottom: 134px;
 
     background-color: #FFFFFF;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 41% 90%;
+    background-size: 45.7% 84.5%;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -27,12 +27,12 @@
   }
 
   .second-header {
-    margin-left: -2px;
     margin-bottom: 24px;
 
     @media #{$tablet-widths} {
       order: 1;
       width: 50%;
+      margin-bottom: 48px;
     }
 
     @media #{$desktop-widths} {
@@ -61,6 +61,8 @@
 
   @media #{$tablet-widths} {
     order: 3;
+    margin-bottom: 59px;
+    padding-right: 3%;
   }
 
   @media #{$desktop-widths} {
@@ -143,6 +145,9 @@
     margin-bottom: 0;
 
     border: none;
+
+    background-size: 62% auto;
+    background-position: 38% 54%;
   }
 
   @media #{$desktop-widths} {
@@ -174,6 +179,7 @@
   @media #{$tablet-widths} {
     order: 2;
     width: 26.2%;
+    margin-bottom: 43px;
   }
 
   @media #{$desktop-widths} {

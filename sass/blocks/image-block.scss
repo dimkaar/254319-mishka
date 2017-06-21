@@ -45,11 +45,11 @@
 
     @media #{$tablet-widths} {
       position: absolute;
-      top: 27%;
+      top: 24.6%;
       right: 0;
 
       width: 50%;
-      padding-right: 6.51%;
+      padding-right: 6.6%;
       box-sizing: border-box;
     }
 
@@ -66,6 +66,8 @@
   line-height: $tertiary-line-height;
 
   @media #{$tablet-widths} {
+    margin-bottom: 34px;
+
     font-size: 20px;
     line-height: $tertiary-line-height;
   }

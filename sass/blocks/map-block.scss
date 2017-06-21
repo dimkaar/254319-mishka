@@ -17,6 +17,7 @@
   }
 
   @media #{$tablet-widths} {
+    margin-bottom: 55px;
     background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
@@ -51,11 +52,10 @@
     background-position: 50%;
 
     @media #{$tablet-widths} {
-      top: 145px;
-      left: 335px;
+      top: 166px;
+      left: 347px;
 
-      width: 80px;
-      height: 125px;
+      width: 67px;
 
       background-size: 100% auto;
     }

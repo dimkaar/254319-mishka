@@ -52,12 +52,16 @@ body {
   margin-top: 0;
 
   @media #{$mobile-widths} {
+    margin-left: -2px;
+
     font-family: $header-font-family;
     font-size: 25px;
     color: $header-color;
   }
 
   @media #{$tablet-widths} {
+    margin-left: -4px;
+
     font-family: $header-font-family;
     font-size: 43px;
     line-height: 50px;

@@ -1,6 +1,11 @@
 .about-block {
   padding-top: 28px;
 
+  @media #{$tablet-widths} {
+    padding-top: 48px;
+    padding-bottom: 30px;
+  }
+
   @media #{$desktop-widths} {
     padding-top: 58px;
     padding-right: 15%;
@@ -19,16 +24,15 @@
 
   .second-header {
     margin-bottom: 30px;
-    margin-left: -2px;
 
     @media #{$tablet-widths} {
       order: 1;
       width: 65%;
+      margin-bottom: 48px;
     }
 
     @media #{$desktop-widths} {
       order: 1;
-      margin-left: -4px;
       margin-bottom: 48px;
     }
   }
@@ -37,7 +41,7 @@
 .about-block__text {
   position: relative;
 
-  width: 83%;
+  width: 75%;
   margin-top: 0;
   margin-bottom: 28px;
   padding-top: 55px;
@@ -50,16 +54,17 @@
   @media #{$tablet-widths} {
     width: 50%;
     padding-right: 20%;
+    margin-bottom: 54px;
     box-sizing: border-box;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 
   @media #{$desktop-widths} {
     width: 50%;
     margin-bottom: 56px;
     box-sizing: border-box;
-
-    font-size: 20px;
-    line-height: 22px;
   }
 
   &::before {
@@ -78,17 +83,17 @@
   }
 
   &--flower-logo{
-    width: 68%;
-    margin-bottom: 26px;
+    @media #{$mobile-widths} {
+      width: 68%;
+      margin-bottom: 26px;
+    }
 
     @media #{$tablet-widths} {
       order: 2;
-      padding-right: 24%;
     }
 
     @media #{$desktop-widths} {
       order: 2;
-      padding-right: 20%;
     }
 
     &::before {
@@ -108,6 +113,8 @@
 
     @media #{$tablet-widths} {
       order: 4;
+      width: 50%;
+      padding-right: 15%;
     }
 
     @media #{$desktop-widths} {
@@ -122,9 +129,11 @@
 
   &--heart-logo {
     width: 70%;
+
     @media #{$tablet-widths} {
       order: 6;
-      padding-right: 24%;
+      width: 50%;
+      padding-right: 20%;
     }
 
     @media #{$desktop-widths} {
@@ -147,6 +156,7 @@
   &--clew-logo {
     @media #{$tablet-widths} {
       order: 3;
+      padding-right: 10%;
     }
 
     @media #{$desktop-widths} {
@@ -171,7 +181,7 @@
     @media #{$tablet-widths} {
       order: 5;
       width: 50%;
-      padding-right: 14.97%;
+      padding-right: 5%;
     }
 
     @media #{$desktop-widths} {
@@ -192,6 +202,7 @@
   &--gift-logo {
     @media #{$tablet-widths} {
       order: 7;
+      padding-right: 10%;
     }
 
     @media #{$desktop-widths} {
