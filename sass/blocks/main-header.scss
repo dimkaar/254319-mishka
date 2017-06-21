@@ -61,6 +61,8 @@
   }
 
   .main-header__nav--opened .main-header__nav-list {
+    z-index: 5;
+    
     &:first-of-type {
       position: absolute;
       top: 79px;
