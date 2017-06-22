@@ -187,10 +187,12 @@
 .catalogue-item__img {
   display: flex;
   justify-content: center;
+  /*
   width: 260px;
   height: 195px;
+  */
   margin-bottom: 25px;
-
+  /*
   &:first-of-type {
     @media #{$mobile-widths} {
       display: flex;
@@ -237,7 +239,7 @@
       width: 100%;
       min-height: 462px;
     }
-  }
+  }*/
 }
 
 .catalogue-item__title {
