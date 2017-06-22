@@ -93,12 +93,5 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function(fn) {
-  run(
-    "clean",
-    "copy",
-    "style",
-    "images",
-    "spriteSvg",
-    fn
-  );
+  run("clean", ["copy", "style", "images", "spriteSvg"], fn);
 });
