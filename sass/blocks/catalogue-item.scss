@@ -187,12 +187,13 @@
 .catalogue-item__img {
   display: flex;
   justify-content: center;
+  width: 100%;
   /*
   width: 260px;
   height: 195px;
-  */
+
   margin-bottom: 25px;
-  /*
+
   &:first-of-type {
     @media #{$mobile-widths} {
       display: flex;
@@ -243,7 +244,7 @@
 }
 
 .catalogue-item__title {
-  margin-top: 0;
+  margin-top: 28px;
   margin-bottom: 6px;
   padding-right: 10.5%;
   padding-left: 10.5%;
@@ -260,6 +261,7 @@
 
     order: 2;
     width: 50%;
+    margin-top: 0;
     padding-right: 0;
     padding-left: 0;
 
@@ -271,6 +273,7 @@
     position: static;
 
     width: 100%;
+    margin-top: 25px;
     margin-bottom: 4px;
     padding-left: 9%;
   }
