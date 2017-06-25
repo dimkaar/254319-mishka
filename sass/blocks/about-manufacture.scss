@@ -206,19 +206,20 @@
 }
 
 .about-manufacture__video-play {
-    content: "";
-    position: absolute;
-    top: 128px;
-    left: 30%;
-    z-index: 5;
+  content: "";
+  position: absolute;
+  top: 128px;
+  left: 30%;
+  z-index: 5;
 
-    width: 103px;
-    height: 85px;
+  width: 103px;
+  height: 85px;
 
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  border: none;
 
   @media #{$tablet-widths} {
     top: 183px;

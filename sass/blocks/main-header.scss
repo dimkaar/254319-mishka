@@ -337,10 +337,11 @@
 }
 
 .main-header__nav-link {
+  font-family: $header-font-family;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: $primary-text-color;
+  color: #000000;
   text-decoration: none;
 
   &--search-logo {
