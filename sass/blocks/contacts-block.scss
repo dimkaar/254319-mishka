@@ -10,7 +10,7 @@
   @media #{$desktop-widths} {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 65px;
+    padding-top: 63px;
     padding-bottom: 105px;
   }
 
@@ -25,20 +25,14 @@
       padding-right: 0;
       padding-left: 22%;
     }
-
-    &:last-of-type {
-      @media #{$desktop-widths} {
-        margin-top: -52px;
-      }
-    }
   }
 
   .third-header {
-    margin-bottom: 2px;
+    margin-bottom: 23px;
 
     @media #{$tablet-widths} {
       position: relative;
-      margin-bottom: 10px;
+      margin-bottom: 46px;
       margin-left: -4px;
 
       display: block;
@@ -64,7 +58,6 @@
 
     @media #{$desktop-widths} {
       margin-top: 81px;
-      margin-bottom: -70px;
       margin-left: -5px;
 
       &::after {
@@ -76,11 +69,12 @@
 }
 
 .contacts-block__table {
-  margin-bottom: 31px;
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     display: flex;
     width: 100%;
+    margin-bottom: 50px;
 
     font-size: $secondary-font-size;
     line-height: $primary-line-height;
@@ -88,39 +82,45 @@
 
   @media #{$desktop-widths} {
     z-index: 5;
-    display: table;
+    margin-bottom: 52px;
   }
 }
 
-.contacts-block__row {
-  @media #{$tablet-widths} {
-    width: 50%;
-  }
-
-  &:first-of-type {
-    @media #{$desktop-widths} {
-      margin-bottom: 10px;
-    }
-  }
-}
-
-.contacts-block__cell {
+.contacts-block__dt {
   border: none;
 
-  &:nth-of-type(2n) {
-    padding-left: 30px;
-
-    @media #{$tablet-widths} {
-      padding-left: 28px;
-    }
-
-    @media #{$desktop-widths} {
-      padding-left: 16px;
-    }
+  @media #{$mobile-widths} {
+    width: 30%;
+    margin-bottom: 21px;
   }
 
-  &:last-of-type {
-    padding-top: 24px;
+  @media #{$tablet-widths} {
+    width: 11%;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    width: 22%;
+    margin-bottom: 21px;
+  }
+}
+
+.contacts-block__dd {
+  border: none;
+
+  @media #{$mobile-widths} {
+    width: 70%;
+    margin-bottom: 21px;
+  }
+
+  @media #{$tablet-widths} {
+    width: 39%;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    width: 78%;
+    margin-bottom: 21px;
   }
 }
 

@@ -3,7 +3,7 @@
   padding-bottom: 9px;
 
   @media #{$tablet-widths} {
-    padding-top: 77px;
+    padding-top: 75px;
     padding-bottom: 134px;
 
     background-color: #FFFFFF;
@@ -18,7 +18,7 @@
   }
 
   @media #{$desktop-widths} {
-    padding-top: 68px;
+    padding-top: 70px;
     padding-bottom: 185px;
     padding-left: 13%;
 
@@ -38,6 +38,7 @@
     @media #{$desktop-widths} {
       order: 1;
       margin-bottom: 48px;
+      margin-left: 0;
     }
   }
 
@@ -57,7 +58,9 @@
 
 .review-block__text {
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 27px;
+  margin-left: 0;
 
   @media #{$tablet-widths} {
     order: 3;
@@ -69,7 +72,7 @@
     order: 3;
     margin-left: 5px;
     margin-bottom: 38px;
-    padding-right: 12%;
+    padding-right: 7%;
 
     font-size: $secondary-font-size;
     line-height: $primary-line-height;
@@ -95,9 +98,33 @@
   }
 }
 
+.review-block__author-name {
+  display: inline-block;
+
+  font-family: $header-font-family;
+  font-style: normal;
+  color: #000000;
+
+  @media #{$mobile-widths} {
+    margin-top: 1px;
+  }
+
+  @media #{$tablet-widths} {
+    margin-top: 0;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 2px;
+  }
+}
+
 .review-block__author-nick {
+  display: inline-block;
   margin-top: 6px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
+
+
+  font-style: normal;
 
   @media #{$tablet-widths} {
     margin-bottom: 0;
@@ -147,7 +174,7 @@
 
     border: none;
 
-    background-size: 62% auto;
+    background-size: 65% auto;
     background-position: 38% 54%;
   }
 

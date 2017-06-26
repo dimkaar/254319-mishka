@@ -1,5 +1,6 @@
 .product-article {
   position: relative;
+  padding-top: 27px;
   padding-bottom: 41px;
 
   @media #{$tablet-widths} {
@@ -37,10 +38,12 @@
 
   .second-header {
     margin-bottom: 5px;
+    margin-left: 0;
 
     @media #{$tablet-widths} {
       width: 85%;
       margin-bottom: 50px;
+      margin-left: -4px;
     }
 
     @media #{$desktop-widths} {
@@ -52,7 +55,7 @@
 
   .table-block {
     @media #{$tablet-widths} {
-      width: 50.1%;
+      width: 50%;
       margin-bottom: 55px;
       padding-right: 6.51%;
       box-sizing: border-box;
@@ -70,6 +73,7 @@
   display: block;
   margin-bottom: 23px;
 
+  font-family: $header-font-family;
   font-size: $secondary-font-size;
   font-weight: 700;
   line-height: $secondary-line-height;
@@ -120,10 +124,12 @@
 .product-article__btn {
   @media #{$tablet-widths} {
     width: 43.7%;
+    margin-left: -2px;
   }
 
   @media #{$desktop-widths} {
     order: 5;
     width: 34.4%;
+    margin-left: 0;
   }
 }

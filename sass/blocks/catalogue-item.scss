@@ -17,7 +17,7 @@
   @media #{$desktop-widths} {
     flex-direction: column;
     width: 30%;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
 
     &:hover {
       .catalogue-item__substrate {
@@ -188,68 +188,16 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  /*
-  width: 260px;
-  height: 195px;
-
-  margin-bottom: 25px;
-
-  &:first-of-type {
-    @media #{$mobile-widths} {
-      display: flex;
-    }
-
-    @media #{$tablet-widths} {
-      display: none;
-    }
-
-    @media #{$desktop-widths} {
-      display: none;
-    }
-  }
-
-  &:nth-of-type(2) {
-    @media #{$mobile-widths} {
-      display: none;
-    }
-
-    @media #{$tablet-widths} {
-      display: flex;
-      order: 1;
-      width: 100%;
-      min-height: 332px;
-      margin-bottom: 0;
-    }
-
-    @media #{$desktop-widths} {
-      display: none;
-    }
-  }
-
-  &:last-of-type {
-    @media #{$mobile-widths} {
-      display: none;
-    }
-
-    @media #{$tablet-widths} {
-      display: none;
-    }
-
-    @media #{$desktop-widths} {
-      display: block;
-      width: 100%;
-      min-height: 462px;
-    }
-  }*/
 }
 
 .catalogue-item__title {
-  margin-top: 28px;
+  margin-top: 26px;
   margin-bottom: 6px;
   padding-right: 10.5%;
   padding-left: 10.5%;
   box-sizing: border-box;
 
+  font-family: $header-font-family;
   font-size: 17px;
   line-height: $tertiary-line-height;
   color: #000000;
@@ -273,16 +221,16 @@
     position: static;
 
     width: 100%;
-    margin-top: 25px;
+    margin-top: 29px;
     margin-bottom: 4px;
-    padding-left: 9%;
+    padding-left: 8%;
   }
 }
 
 .catalogue-item__product-desc {
   margin-top: 0;
-  margin-bottom: 21px;
-  padding-bottom: 19px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
   box-sizing: border-box;
 
   font-size: 13px;
@@ -290,14 +238,14 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media #{$tablet-widths} {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
     padding-bottom: 175px;
 
     font-size: $primary-font-size;
   }
 
   @media #{$desktop-widths} {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     padding-bottom: 10px;
 
     font-size: $primary-font-size;
@@ -308,7 +256,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   @media #{$tablet-widths} {
     padding-left: 2%;
@@ -318,6 +266,7 @@
   @media #{$desktop-widths} {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -325,6 +274,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  font-family: $header-font-family;
   font-weight: 700;
   line-height: $tertiary-line-height;
   color: #000000;

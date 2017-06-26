@@ -10,7 +10,7 @@
     </script>
     <script src="js/picturefill.js" async></script>
     <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <div class="body-overlay"></div>
@@ -32,9 +32,11 @@
         <div class="slim-block slim-block--logo">
           <div class="container">
             <a class="main-header__logo">
-              <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka">
-              <img class="main-header__logo-img" src="img/logo-tablet.svg" alt="Логотип Mishka">
-              <img class="main-header__logo-img" src="img/logo-desktop.svg" alt="Логотип Mishka">
+              <picture>
+                <source class="main-header__logo-img" srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                <source class="main-header__logo-img" srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka"> <!-- Тянется, размеры можно не задавать (Д1) -->
+              </picture>
             </a>
             <button class="main-header__toggle" type="button">Открыть меню</button>
           </div>
@@ -59,7 +61,7 @@
           <li class="main-header__nav-item">
             <a class="slim-block main-header__nav-link main-header__nav-link--search-logo" href="#">
               <div class="container">
-                <svg class="main-header__svg main-header__svg--search">
+                <svg class="main-header__svg main-header__svg--search" width="21" height="21">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
                 Поиск по сайту
@@ -69,7 +71,7 @@
           <li class="main-header__nav-item">
             <a class="slim-block main-header__nav-link main-header__nav-link--cart-logo" href="#">
               <div class="container">
-                <svg class="main-header__svg main-header__svg--cart">
+                <svg class="main-header__svg main-header__svg--cart" width="21" height="21">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
@@ -108,41 +110,35 @@
     </header>
 
     <main>
-      <article class="long-block long-block--cut-border product-article">
+      <section class="long-block long-block--cut-border product-article">
         <div class="container">
           <h2 class="second-header">Вязаные корзинки</h2>
           <b class="product-article__promo-text">Товар недели</b>
           <p class="product-article__text">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <div class="table-block">
-            <p class="table-block__row">
-              <span class="table-block__cell product-article__cell">
-                Цвет:</span>
-              <span class="table-block__cell product-article__cell">
-                «Тиффани»/серый</span>
-            </p>
-            <p class="table-block__row">
-              <span class="table-block__cell product-article__cell">
-                Диаметр</span>
-              <span class="table-block__cell product-article__cell">
-                25 см</span>
-            </p>
-            <p class="table-block__row">
-              <span class="table-block__cell product-article__cell">
-                Высота</span>
-              <span class="table-block__cell product-article__cell">
-                15 см</span>
-            </p>
+          <dl class="table-block">
+            <dt class="table-block__dt product-article__dt">
+              Цвет:</dt>
+            <dd class="table-block__dd product-article__dd">
+              «Тиффани»/серый</dd>
+            <dt class="table-block__dt product-article__dt">
+              Диаметр:</dt>
+            <dd class="table-block__dd product-article__dd">
+              25 см</dd>
+            <dt class="table-block__dt product-article__dt">
+              Высота:</dt>
+            <dd class="table-block__dd product-article__dd">
+              15 см</dd>
+          </dl>
+          <div class="image-block">
+            <img class="image-block__img" src="img/triple-set-tablet@1x.jpg" alt="Изображение товара" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" width="333" height="404">
+            <img class="image-block__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" width="260" height="315">
+            <p class="image-block__img-text">Цена: 990 руб.</p>
           </div>
-          <figure class="image-block">
-            <img class="image-block__img" src="img/triple-set-tablet@1x.jpg" alt="Изображение товара" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="image-block__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
-            <figcaption class="image-block__img-text">Цена: 990 руб.</figcaption>
-          </figure>
           <a class="text-btn product-article__btn" href="#">Заказать</a>
         </div>
-      </article>
+      </section>
 
       <section class="long-block about-block">
         <div class="container">
@@ -165,13 +161,14 @@
       <section class="long-block long-block--cut-border review-block">
         <div class="container">
           <h2 class="second-header">Отзывы</h2>
-          <p class="review-block__text">
+          <blockquote class="review-block__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
             как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <a class="review-block__author-link" href="#">Анастасия Красильникова
-            <p class="review-block__author-nick">@misssssiskras</p>
+          </blockquote>
+          <a class="review-block__author-link" href="#">
+            <cite class="review-block__author-name">Анастасия Красильникова</cite><br>
+            <cite class="review-block__author-nick">@misssssiskras</cite>
           </a>
           <div class="review-block__buttons-container">
             <button class="btn review-block__arrow-btn review-block__arrow-btn--left" type="button">Предыдущий</button>
@@ -184,21 +181,18 @@
       <section class="long-block contacts-block">
         <div class="container">
           <h3 class="third-header">Контакты</h3>
-          <div class="table-block contacts-block__table">
-            <p class="table-block__row contacts-block__row">
-              <span class="table-block__cell contacts-block__cell">e-mail</span>
-              <span class="table-block__cell contacts-block__cell">
-                <a class="table-block__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
-            </p>
-            <p class="table-block__row contacts-block__row">
-              <span class="table-block__cell contacts-block__cell">адрес:</span>
-              <span class="table-block__cell contacts-block__cell">г. Санкт-Петербург, <br>ул. Большая Конюшенная,
-                <br>д. 19/8, офис 101</span>
-            </p>
-          </div>
+          <dl class="table-block contacts-block__table">
+              <dt class="table-block__dt contacts-block__dt">e-mail:</dt>
+              <dd class="table-block__dd contacts-block__dd">
+                <a class="table-block__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </dd>
+              <dt class="table-block__dt contacts-block__dt">адрес:</dt>
+              <dd class="table-block__dd contacts-block__dd">г. Санкт-Петербург, <br>ул. Большая Конюшенная,
+                <br>д. 19/8, офис 101</dd>
+          </dl>
         </div>
         <div class="map-block">
-          <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1563.6532074125553!2d30.321582624823847!3d59.93654270489199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1498065959551" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1563.6532074125553!2d30.321582624823847!3d59.93654270489199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1498065959551" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="container">
           <a class="text-btn contacts-block__btn" href="#">Напишите нам</a>
@@ -209,29 +203,29 @@
     <footer class="main-footer">
       <div class="container">
         <a class="main-footer__shop-logo" href="#main-header">
-          <svg class="main-footer__logo-svg">
+          <svg class="main-footer__logo-svg" width="100" height="35">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
         <div class="footer-social">
           <a class="footer-social__social-btn footer-social__social-btn--inst" href="#" title="instagram">
-            <svg class="footer-social__svg">
+            <svg class="footer-social__svg" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
           <a class="footer-social__social-btn footer-social__social-btn--fb" href="#" title="facebook">
-            <svg class="footer-social__svg">
+            <svg class="footer-social__svg" width="30" height="30">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
           <a class="footer-social__social-btn footer-social__social-btn--tw" href="#" title="twitter">
-            <svg class="footer-social__svg">
+            <svg class="footer-social__svg" width="25" height="25">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </div>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано <svg class="main-footer__htmlacademy-logo">
+          Разработано <svg class="main-footer__htmlacademy-logo" width="27" height="44">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
         </a>

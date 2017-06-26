@@ -1,7 +1,6 @@
 .about-manufacture {
   position: relative;
 
-  margin-bottom: 58px;
   padding-top: 25px;
   padding-bottom: 32px;
   box-sizing: border-box;
@@ -13,7 +12,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 63px;
     padding-top: 0;
     padding-bottom: 45px;
   }
@@ -21,9 +19,8 @@
   @media #{$desktop-widths} {
     align-items: flex-end;
     width: 100%;
-    margin-bottom: 105px;
     padding-top: 0;
-    padding-bottom: 59px;
+    padding-bottom: 62px;
   }
 
   .second-header {
@@ -46,7 +43,7 @@
     @media #{$desktop-widths} {
       order: 1;
       width: 30%;
-      padding-top: 94px;
+      padding-top: 95px;
       padding-right: 6%;
       padding-left: 2.4%;
       box-sizing: border-box;
@@ -215,6 +212,7 @@
   width: 103px;
   height: 85px;
 
+  background-color: transparent;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -229,6 +227,7 @@
   }
 
   @media #{$desktop-widths} {
+    top: 185px;
     left: 27.7%;
 
     width: 101px;

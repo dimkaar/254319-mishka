@@ -17,9 +17,11 @@
         <section class="slim-block slim-block--logo">
           <div class="container">
             <a class="main-header__logo" href="index.html">
-              <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka">
-              <img class="main-header__logo-img" src="img/logo-tablet.svg" alt="Логотип Mishka">
-              <img class="main-header__logo-img" src="img/logo-desktop.svg" alt="Логотип Mishka">
+              <picture>
+                <source class="main-header__logo-img" srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                <source class="main-header__logo-img" srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka"> <!-- Тянется, размеры можно не задавать (Д1) -->
+              </picture>
             </a>
             <button class="main-header__toggle">Открыть меню</button>
           </div>
@@ -44,7 +46,7 @@
           <li class="main-header__nav-item">
             <a class="slim-block main-header__nav-link main-header__nav-link--search-logo" href="#">
               <div class="container">
-                <svg class="main-header__svg main-header__svg--search">
+                <svg class="main-header__svg main-header__svg--search" width="21" height="21">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
                 Поиск по сайту
@@ -54,7 +56,7 @@
           <li class="main-header__nav-item">
             <a class="slim-block main-header__nav-link main-header__nav-link--cart-logo" href="#">
               <div class="container">
-                <svg class="main-header__svg main-header__svg--cart">
+                <svg class="main-header__svg main-header__svg--cart" width="21" height="21">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
@@ -89,7 +91,7 @@
         <fieldset class="form__fieldset form__fieldset--type">
           <div class="form__fieldset-container">
             <div class="form__header-substrate">
-              <p class="form__content-header">Тип</p>
+              <h3 class="form__content-header">Тип</h3>
             </div>
             <div class="form__content-container">
               <input class="form__radio" type="radio" name="type" id="accessory" value="accessory" checked>
@@ -104,30 +106,30 @@
         <fieldset class="form__fieldset form__fieldset--color">
           <div class="form__fieldset-container">
           <div class="form__header-substrate">
-            <p class="form__content-header">Цвет</p>
+            <h3 class="form__content-header">Цвет</h3>
           </div>
             <div class="form__content-container">
-              <input class="form__checkbox" name="color" type="checkbox" id="white" value="white" checked>
+              <input class="form__checkbox" name="white" type="checkbox" id="white" value="white" checked>
               <label class="form__label form__label--checkbox" for="white">
                 Белый
               </label>
-              <input class="form__checkbox" name="color" type="checkbox" id="grey" value="grey" checked>
+              <input class="form__checkbox" name="grey" type="checkbox" id="grey" value="grey" checked>
               <label class="form__label form__label--checkbox" for="grey">
                 Серый
               </label>
-              <input class="form__checkbox" name="color" type="checkbox" id="tiffani" value="tiffani">
+              <input class="form__checkbox" name="tiffani" type="checkbox" id="tiffani" value="tiffani">
               <label class="form__label form__label--checkbox" for="tiffani">
                 «Тиффани»
               </label>
-              <input class="form__checkbox" name="color" type="checkbox" id="black" value="black">
+              <input class="form__checkbox" name="black" type="checkbox" id="black" value="black">
               <label class="form__label form__label--checkbox" for="black">
                 Черный
               </label>
-              <input class="form__checkbox" name="color" type="checkbox" id="pink" value="pink">
+              <input class="form__checkbox" name="pink" type="checkbox" id="pink" value="pink">
               <label class="form__label form__label--checkbox" for="pink">
                 Розовый
               </label>
-              <input class="form__checkbox" name="color" type="checkbox" id="orange" value="orange">
+              <input class="form__checkbox" name="orange" type="checkbox" id="orange" value="orange">
               <label class="form__label form__label--checkbox" for="orange">
                 Оранжевый
               </label>
@@ -137,20 +139,20 @@
         <fieldset class="form__fieldset form__fieldset--fio">
           <div class="form__fieldset-container">
             <div class="form__header-substrate">
-              <p class="form__content-header">ФИО</p>
+              <h3 class="form__content-header">ФИО</h3>
             </div>
             <div class="form__content-container">
               <div class="form__row-container">
                 <label class="form__label" for="name">Имя:</label>
-                <input class="form__text" type="text" name="FIO" id="name" placeholder="Введите ваше имя*" required>
+                <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
               </div>
               <div class="form__row-container">
                 <label class="form__label" for="surname">Фамилия:</label>
-                <input class="form__text" type="text" name="FIO" id="surname" placeholder="Укажите фамилию*" required>
+                <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
               </div>
               <div class="form__row-container">
                 <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__text" type="text" name="FIO" id="patronymic" placeholder="Отчество, если желаете">
+                <input class="form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
               </div>
             </div>
           </div>
@@ -158,11 +160,11 @@
         <fieldset class="form__fieldset form__fieldset--img form__fieldset--tel">
           <div class="form__fieldset-container">
             <div class="form__header-substrate">
-              <p class="form__content-header">Тел</p>
+              <h3 class="form__content-header">Тел</h3>
             </div>
             <div class="form__content-container">
               <input class="form__tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-              <svg class="form__input-img form__input-img--tel">
+              <svg class="form__input-img form__input-img--tel" width="26" height="26">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </div>
@@ -171,11 +173,11 @@
         <fieldset class="form__fieldset form__fieldset--img form__fieldset--email">
           <div class="form__fieldset-container">
             <div class="form__header-substrate">
-              <p class="form__content-header">E&#8209;mail</p>
+              <h3 class="form__content-header">E&#8209;mail</h3>
             </div>
             <div class="form__content-container">
               <input class="form__email" type="email" name="email" placeholder="Ваш Email*" required>
-              <svg class="form__input-img form__input-img--email">
+              <svg class="form__input-img form__input-img--email" width="34" height="23">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </div>
@@ -184,7 +186,7 @@
         <fieldset class="form__fieldset form__fieldset--extra">
           <div class="form__fieldset-container">
             <div class="form__header-substrate">
-              <p class="form__content-header">Доп</p>
+              <h3 class="form__content-header">Доп</h3>
             </div>
             <div class="form__content-container">
               <textarea class="form__textarea" name="extra" cols="25" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -201,29 +203,29 @@
     <footer class="main-footer">
       <div class="container">
         <a class="main-footer__shop-logo" href="#main-header">
-          <svg class="main-footer__logo-svg">
+          <svg class="main-footer__logo-svg" width="100" height="35">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
         <div class="footer-social">
           <a class="footer-social__social-btn footer-social__social-btn--inst" href="#" title="instagram">
-            <svg class="footer-social__svg">
+            <svg class="footer-social__svg" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
           <a class="footer-social__social-btn footer-social__social-btn--fb" href="#" title="facebook">
-            <svg class="footer-social__svg">
+            <svg class="footer-social__svg" width="30" height="30">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
           <a class="footer-social__social-btn footer-social__social-btn--tw" href="#" title="twitter">
-            <svg class="footer-social__svg">
+            <svg class="footer-social__svg" width="25" height="25">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </div>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано <svg class="main-footer__htmlacademy-logo">
+          Разработано <svg class="main-footer__htmlacademy-logo" width="27" height="44">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
         </a>

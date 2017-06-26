@@ -7,8 +7,8 @@
   margin: 0;
 
   @media #{$tablet-widths} {
-    width: 56.4%;
-    padding-right: 12.81%;
+    width: 57.4%;
+    padding-right: 13.81%;
     box-sizing: border-box;
   }
 
@@ -59,6 +59,7 @@
 }
 
 .image-block__img-text {
+  margin-top: 0;
   margin-bottom: 26px;
 
   font-size: $secondary-font-size;
@@ -66,8 +67,16 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 34px;
+    margin-left: -3px;
 
+    font-family: $header-font-family;
     font-size: 20px;
     line-height: $tertiary-line-height;
+  }
+
+
+  @media #{$desktop-widths} {
+    margin-left: 0;
+    padding-left: 5%;
   }
 }

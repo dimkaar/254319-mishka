@@ -4,17 +4,17 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
   background-color: #f1f1f1;
 
   @media #{$tablet-widths} {
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 50px;
   }
 
   @media #{$desktop-widths} {
-    padding-bottom: 53px;
+    padding-bottom: 48px;
   }
 
   .container {
@@ -28,6 +28,11 @@
     }
 
     @media #{$desktop-widths} {
+      padding-right: 4.4%;
+      padding-left: 4.4%;
+    }
+
+    @media #{$extended-desktop} {
       padding-right: 8%;
       padding-left: 8%;
     }
@@ -50,6 +55,7 @@
 
   @media #{$desktop-widths} {
     width: 105px;
+    padding-bottom: 4px;
   }
 
   &:hover {
@@ -76,6 +82,7 @@
   justify-content: center;
   align-items: center;
 
+  font-family: $header-font-family;
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
@@ -99,7 +106,7 @@
 .main-footer__htmlacademy-logo {
   width: 27px;
   height: 44px;
-  margin-left: 38px;
+  margin-left: 30px;
 
   fill: $mint-color;
 }
