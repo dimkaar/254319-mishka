@@ -23,6 +23,10 @@
     @media #{$desktop-widths} {
       width: 50%;
       padding-right: 0;
+      padding-left: 19.5%;
+    }
+
+    @media #{$extended-desktop} {
       padding-left: 22%;
     }
   }

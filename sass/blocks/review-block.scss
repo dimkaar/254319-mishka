@@ -20,10 +20,16 @@
   @media #{$desktop-widths} {
     padding-top: 70px;
     padding-bottom: 185px;
+    padding-left: 15%;
+
+    background-position: 6.2% 0;
+    background-size: auto 84.1%;
+  }
+
+  @media #{$extended-desktop} {
     padding-left: 13%;
 
     background-position: 11.1% 0;
-    background-size: auto 83.9%;
   }
 
   .second-header {
@@ -51,6 +57,10 @@
     }
 
     @media #{$desktop-widths} {
+      padding-right: 5%;
+    }
+
+    @media #{$extended-desktop} {
       padding-right: 9%;
     }
   }
@@ -72,10 +82,14 @@
     order: 3;
     margin-left: 5px;
     margin-bottom: 38px;
-    padding-right: 7%;
+    padding-right: 9%;
 
     font-size: $secondary-font-size;
     line-height: $primary-line-height;
+  }
+
+  @media #{$extended-desktop} {
+    padding-right: 7%;
   }
 }
 
