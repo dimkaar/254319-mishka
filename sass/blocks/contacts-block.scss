@@ -1,13 +1,16 @@
 .contacts-block {
-  padding-bottom: 35px;
+  padding-top: 19px;
+  padding-bottom: 39px;
 
   @media #{$tablet-widths} {
-    padding-bottom: 58px;
+    padding-top: 61px;
+    padding-bottom: 57px;
   }
 
   @media #{$desktop-widths} {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 63px;
     padding-bottom: 105px;
   }
 
@@ -22,19 +25,15 @@
       padding-right: 0;
       padding-left: 22%;
     }
-
-    &:last-of-type {
-      @media #{$desktop-widths} {
-        margin-top: -52px;
-      }
-    }
   }
 
   .third-header {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 
-    @media #{$tablet-widths}{
+    @media #{$tablet-widths} {
       position: relative;
+      margin-bottom: 46px;
+      margin-left: -4px;
 
       display: block;
       width: 100%;
@@ -43,8 +42,8 @@
       &::after {
         content: "";
         position: absolute;
-        top: -10px;
-        right: 0;
+        top: -16px;
+        right: -5px;
 
         width: 56px;
         height: 83px;
@@ -56,9 +55,9 @@
         background-size: contain;
       }
     }
-    @media #{$desktop-widths}{
+
+    @media #{$desktop-widths} {
       margin-top: 81px;
-      margin-bottom: -55px;
       margin-left: -5px;
 
       &::after {
@@ -70,42 +69,58 @@
 }
 
 .contacts-block__table {
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     display: flex;
     width: 100%;
-  }
-
-  @media #{$desktop-widths} {
-    display: table;
+    margin-bottom: 50px;
 
     font-size: $secondary-font-size;
     line-height: $primary-line-height;
   }
-}
 
-.contacts-block__row {
-  @media #{$tablet-widths} {
-    width: 50%;
-  }
-
-  &:first-of-type {
-    @media #{$desktop-widths} {
-      margin-bottom: 10px;
-    }
+  @media #{$desktop-widths} {
+    z-index: 5;
+    margin-bottom: 52px;
   }
 }
 
-.contacts-block__cell {
+.contacts-block__dt {
   border: none;
 
-  &:nth-of-type(2n) {
-    padding-left: 15px;
+  @media #{$mobile-widths} {
+    width: 30%;
+    margin-bottom: 21px;
   }
 
-  &:last-of-type {
-    padding-top: 24px;
+  @media #{$tablet-widths} {
+    width: 11%;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    width: 22%;
+    margin-bottom: 21px;
+  }
+}
+
+.contacts-block__dd {
+  border: none;
+
+  @media #{$mobile-widths} {
+    width: 70%;
+    margin-bottom: 21px;
+  }
+
+  @media #{$tablet-widths} {
+    width: 39%;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    width: 78%;
+    margin-bottom: 21px;
   }
 }
 

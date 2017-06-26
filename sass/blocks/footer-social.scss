@@ -3,10 +3,11 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-bottom: 23px;
-  padding-right: 10%;
+  margin-bottom: 15px;
+  padding-top: 4px;
+  padding-right: 16%;
   padding-bottom: 25px;
-  padding-left: 10%;
+  padding-left: 14%;
   box-sizing: border-box;
 
   border-bottom: 1px solid #e5e5e5;
@@ -14,7 +15,7 @@
   @media #{$tablet-widths} {
     width: 27%;
     margin-bottom: 0;
-    margin-left: 11%;
+    margin-left: 12%;
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
@@ -24,34 +25,46 @@
 
   @media #{$desktop-widths} {
     width: 17%;
-    margin-left: 7%;
+    margin-left: 7.2%;
   }
 }
 
 .footer-social__social-btn {
-  display: block;
-  width: 30px;
-  height: 30px;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: #f1f1f1;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%;
 
-  &--inst {
-    background-image: url("../img/icon-insta.svg");
+  &:hover {
+    .footer-social__svg {
+      fill: #46c1ae;
+    }
   }
 
-  &--fb {
-    background-image: url("../img/icon-fb.svg");
+  &:active {
+    .footer-social__svg {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
+  &:first-of-type {
+    .footer-social__svg {
+      width: 22px;
+      height: 22px;
+    }
   }
+
+  &:last-of-type {
+    .footer-social__svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.footer-social__svg {
+  width: 30px;
+  height: 30px;
 }

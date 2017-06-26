@@ -1,12 +1,9 @@
 .about-manufacture {
   position: relative;
 
-  margin-bottom: 55px;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   box-sizing: border-box;
-
-  overflow: hidden;
 
   border: 1px solid #e5e5e5;
 
@@ -15,7 +12,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 63px;
     padding-top: 0;
     padding-bottom: 45px;
   }
@@ -23,16 +19,15 @@
   @media #{$desktop-widths} {
     align-items: flex-end;
     width: 100%;
-    margin-bottom: 105px;
     padding-top: 0;
-    padding-bottom: 59px;
+    padding-bottom: 62px;
   }
 
   .second-header {
     position: relative;
 
-    margin-bottom: 25px;
-    padding-left: 80px;
+    margin-bottom: 23px;
+    padding-left: 90px;
 
     font-size: $secondary-font-size;
     line-height: $tertiary-line-height;
@@ -40,7 +35,7 @@
     @media #{$tablet-widths} {
       order: 2;
       margin-bottom: 32px;
-      padding-left: 104px;
+      padding-left: 108px;
 
       font-size: 20px;
     }
@@ -58,11 +53,11 @@
       &::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 25px;
+        top: 7px;
+        left: 27px;
 
-        width: 35px;
-        height: 28px;
+        width: 48px;
+        height: 30px;
 
         background-color: #ffffff;
         background-image: url("../img/icon-video.svg");
@@ -72,7 +67,7 @@
 
         @media #{$tablet-widths} {
           top: -5px;
-          left: 36px;
+          left: 40px;
 
           width: 38px;
           height: 33px;
@@ -112,11 +107,47 @@
         width: 100%;
         min-height: 453px;
         margin-bottom: 39px;
+
+        background-image: url("../img/video-tablet@1x.jpg");
+
+        @media (min-resolution: 1.5dppx) {
+          background-image: url("../img/video-tablet@2x.jpg");
+        }
       }
 
       @media #{$desktop-widths} {
         display: none;
       }
+    }
+  }
+
+  &:hover {
+    .about-manufacture__substrate {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 64%;
+      z-index: -5;
+
+      width: 36%;
+      height: 454px;
+
+      box-shadow: 0 0 10px 5px #e8e8e8;
+    }
+  }
+
+  &:active {
+    .about-manufacture__substrate {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 64%;
+      z-index: -5;
+
+      width: 36%;
+      height: 454px;
+
+      box-shadow: 0 0 5px 1px #e8e8e8;
     }
   }
 }
@@ -143,47 +174,108 @@
 
     display: block;
   }
+
   .about-manufacture__video {
     width: 100%;
     min-height: 455px;
+
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }
 
 .about-manufacture__video {
   width: 260px;
   height: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .about-manufacture__video-play {
-    content: "";
-    position: absolute;
-    top: 130px;
-    left: 30%;
+  content: "";
+  position: absolute;
+  top: 128px;
+  left: 30%;
+  z-index: 5;
 
-    width: 100px;
-    height: 85px;
+  width: 103px;
+  height: 85px;
 
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  border: none;
 
   @media #{$tablet-widths} {
     top: 183px;
     left: 42.4%;
+
+    width: 100px;
   }
 
   @media #{$desktop-widths} {
-    top: 184px;
-    left: 42.65%;
+    top: 185px;
+    left: 27.7%;
+
+    width: 101px;
+  }
+
+  &:hover {
+    top: 121px;
+    left: 27%;
+
+    width: 124px;
+    height: 102px;
+
+    @media #{$tablet-widths} {
+      top: 174px;
+      left: 41%;
+
+      width: 120px;
+    }
+
+    @media #{$desktop-widths} {
+      left: 26.8%;
+    }
+  }
+
+  &:active {
+    top: 144px;
+    left: 35%;
+
+    width: 82px;
+    height: 68px;
+
+    @media #{$tablet-widths} {
+      top: 192px;
+      left: 44%;
+
+      width: 80px;
+    }
+
+    @media #{$desktop-widths} {
+      left: 28.6%;
+    }
   }
 }
 
 .about-manufacture__text {
   margin-top: 0;
-  margin-bottom: 50px;
-  padding-right: $primary-padding;
+  margin-bottom: 24px;
+  padding-right: 13%;
   padding-left: 34px;
 
   font-size: 13px;

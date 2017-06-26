@@ -52,12 +52,16 @@ body {
   margin-top: 0;
 
   @media #{$mobile-widths} {
+    margin-left: -2px;
+
     font-family: $header-font-family;
     font-size: 25px;
     color: $header-color;
   }
 
   @media #{$tablet-widths} {
+    margin-left: -4px;
+
     font-family: $header-font-family;
     font-size: 43px;
     line-height: 50px;
@@ -112,6 +116,7 @@ body {
   padding-bottom: 14px;
   box-sizing: border-box;
 
+  font-family: $header-font-family;
   font-size: $secondary-font-size;
   font-weight: 700;
   line-height: $secondary-line-height;
@@ -121,4 +126,16 @@ body {
   text-transform: uppercase;
 
   border: 2px solid #444444;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #444444;
+  }
 }

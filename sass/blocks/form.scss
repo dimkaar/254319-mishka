@@ -26,7 +26,7 @@
   }
 
   @media #{$desktop-widths} {
-    padding-left: 13.1%;
+    padding-left: 9.8%;
   }
 
   &--type {
@@ -48,7 +48,7 @@
       }
 
       @media #{$desktop-widths} {
-        margin-right: 11%;
+        margin-right: 10.3%;
       }
     }
   }
@@ -74,8 +74,8 @@
       }
 
       @media #{$desktop-widths} {
-        width: 78%;
-        margin-right: 11%;
+        width: 80%;
+        margin-right: 8.3%;
       }
     }
   }
@@ -95,8 +95,8 @@
       }
 
       @media #{$desktop-widths} {
-        width: 88.9%;
-        padding-right: 19.25%;
+        width: 88.1%;
+        padding-right: 15.7%;
         box-sizing: border-box;
       }
     }
@@ -130,8 +130,8 @@
       }
 
       @media #{$desktop-widths} {
-        width: 80%;
-        padding-right: 8.8%;
+        width: 83.8%;
+        padding-right: 4.5%;
       }
     }
 
@@ -160,8 +160,8 @@
       }
 
       @media #{$desktop-widths} {
-        width: 80%;
-        padding-right: 8.8%;
+        width: 83.8%;
+        padding-right: 4.5%;
       }
     }
 
@@ -169,7 +169,7 @@
       margin-bottom: 24px;
 
       @media #{$tablet-widths} {
-        margin-top: 5px;
+        margin-top: 8px;
         margin-bottom: 10px;
       }
     }
@@ -197,7 +197,7 @@
 
     .form__header-substrate {
       @media #{$tablet-widths} {
-        margin-top: 5px;
+        margin-top: 9px;
       }
     }
 
@@ -207,8 +207,8 @@
       }
 
       @media #{$desktop-widths} {
-        width: 80.3%;
-        margin-right: 8.7%;
+        width: 84%;
+        margin-right: 4.3%;
       }
     }
   }
@@ -273,6 +273,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  font-family: $header-font-family;
   font-size: $secondary-font-size;
   line-height: 16px;
   color: $mint-color;
@@ -353,6 +354,7 @@
   margin-bottom: 10px;
   padding-top: 3px;
 
+  font-family: $header-font-family;
   font-size: $secondary-font-size;
   font-weight: 700;
   line-height: 18px;
@@ -393,6 +395,18 @@
         height: 48px;
       }
     }
+
+    &:hover {
+      &::before {
+        border-color: $mint-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: #c7c7c7;
+      }
+    }
   }
 
   &--checkbox {
@@ -408,7 +422,7 @@
     }
 
     @media #{$desktop-widths} {
-      width: 33%;
+      width: 32%;
       padding-left: 10.5%;
       box-sizing: border-box;
     }
@@ -429,6 +443,18 @@
 
         width: 50px;
         height: 48px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        border-color: $mint-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: #c7c7c7;
       }
     }
   }
@@ -454,14 +480,26 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+  outline: none;
+
+  &:hover {
+    border-color: $mint-color;
+  }
+
+  &:active {
+    border-color: $mint-color;
+  }
+
+  &:focus {
+    border-color: $mint-color;
+  }
 }
 
 .form__text {
   @media #{$tablet-widths} {
+    margin-top: -14px;
     margin-bottom: 36px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+    padding: 15px;
     font-size: 19px;
   }
 }
@@ -470,9 +508,8 @@
 .form__email {
   @media #{$tablet-widths} {
     width: 100%;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+    margin-top: -14px;
+    padding: 15px;
 
     font-size: 19px;
 
@@ -482,6 +519,21 @@
   @media #{$desktop-widths} {
     width: 86.7%;
   }
+
+  &:hover + .form__input-img {
+      fill: $mint-color;
+      opacity: 1;
+    }
+
+  &:active + .form__input-img {
+      fill: $mint-color;
+      opacity: 1;
+    }
+
+  &:focus + .form__input-img {
+      fill: $mint-color;
+      opacity: 1;
+    }
 }
 
 .form__input-img {
@@ -497,8 +549,8 @@
     top: 48px;
     right: 34px;
 
-    width: 27px;
-    height: 27px;
+    width: 26px;
+    height: 26px;
 
     background-image: url("../img/icon-phone.svg");
 
@@ -509,7 +561,7 @@
 
     @media #{$desktop-widths} {
       top: 60px;
-      right: 22.6%;
+      right: 20.2%;
     }
   }
 
@@ -523,15 +575,17 @@
     background-image: url("../img/icon-mail.svg");
 
     @media #{$tablet-widths} {
-      width: 40px;
-      height: 32px;
-
       top: 16px;
       right: 68px;
+
+      width: 40px;
+      height: 32px;
     }
 
     @media #{$desktop-widths} {
-      right: 22%;
+      right: 19.8%;
+
+      width: 34px;
     }
   }
 }
@@ -545,6 +599,7 @@
   line-height: 18px;
 
   border: 2px solid #000000;
+  outline: none;
 
   @media #{$tablet-widths} {
     font-size: 19px;
@@ -552,6 +607,12 @@
 
   @media #{$desktop-widths} {
     width: 86.6%;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $mint-color;
   }
 }
 
@@ -569,7 +630,7 @@
   }
 
   @media #{$desktop-widths} {
-    width: 56%;
+    width: 61%;
     margin-right: auto;
     margin-left: auto;
     padding-left: 0;

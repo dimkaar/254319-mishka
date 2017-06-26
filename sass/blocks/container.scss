@@ -17,6 +17,15 @@
   }
 
   @media #{$desktop-widths} {
+    padding-right: 5%;
+    padding-left: 5%;
+
+    .slim-block{
+      padding: 0;
+    }
+  }
+
+  @media #{$extended-desktop} {
     padding-right: 10%;
     padding-left: 10%;
 
