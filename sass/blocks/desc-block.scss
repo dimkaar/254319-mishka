@@ -89,9 +89,11 @@
   }
 
   @media #{$desktop-widths} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-right: 4.3%;
+    padding-left: 4.3%;
+  }
+
+  @media #{$extended-desktop} {
     padding-right: 8%;
     padding-left: 8%;
   }
