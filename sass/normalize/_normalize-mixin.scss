@@ -374,6 +374,7 @@
     audio,
     video {
       display: inline-block;
+      vertical-align: baseline;
     }
 
     /**
@@ -640,6 +641,7 @@
 
     canvas {
       display: inline-block;
+      vertical-align: baseline;
     }
 
     /**

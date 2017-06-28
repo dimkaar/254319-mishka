@@ -31,15 +31,14 @@
 
     @media #{$tablet-widths} {
       &::after {
-        height: 16px;
-
-        background-size: cover;
+        height: 15px;
       }
     }
 
     @media #{$desktop-widths} {
       &::after {
         height: 25px;
+
       }
     }
   }

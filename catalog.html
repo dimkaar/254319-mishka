@@ -34,7 +34,7 @@
             <picture>
               <source class="main-header__logo-img" srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
               <source class="main-header__logo-img" srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-              <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka"> <!-- Тянется, размеры можно не задавать (Д1) -->
+              <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka">
             </picture>
           </a>
           <button class="main-header__toggle">Открыть меню</button>
@@ -68,7 +68,7 @@
           </a>
         </li>
         <li class="main-header__nav-item">
-          <a class="slim-block main-header__nav-link main-header__nav-link--cart-logo" href="#">
+          <a class="slim-block main-header__nav-link main-header__nav-link--cart-logo main-header__nav-link--cart-catalog" href="#">
             <div class="container">
               <svg class="main-header__svg main-header__svg--cart" width="21" height="21">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -99,77 +99,77 @@
   </header>
 
   <main class="catalogue-main">
-    <section class="catalogue-item">
-      <a class="catalogue-item__link" href="#">
+    <article class="catalogue-item">
+      <a class="catalogue-item__link" href="rabbit.html">
         <picture>
           <source class="catalogue-item__img" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 1150px)">
           <source class="catalogue-item__img" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="catalogue-item__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Изображение Зайчика-попрыгайчика"> <!-- Тянется, размеры можно не задавать (Д1) -->
+          <img class="catalogue-item__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Изображение Зайчика-попрыгайчика">
+          <!-- Для адаптивных изображений, у которых есть версии с разными размерами и пропоциями (например, заданы через тег sources в элементе picture), размеры в img в HTML можно не задавать -->
         </picture>
-        <h2 class="catalogue-item__title">Зайчик-попрыгайчик</h2>
+        <h1 class="catalogue-item__title">Зайчик-попрыгайчик</h1>
       </a>
       <div class="container">
-        <div class="catalogue-item__substrate"></div>
         <p class="catalogue-item__product-desc">Рост 30 см, вес 200 г</p>
         <footer class="catalogue-item__desc-footer">
           <p class="catalogue-item__product-price">1 200 руб.</p>
-          <a class="catalogue-item__buy-btn">
+          <a class="catalogue-item__buy-btn catalogue-item__buy-btn--rabbit" href="#">
             <svg class="catalogue-item__btn" width="22" height="18">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </a>
         </footer>
       </div>
-    </section>
+    </article>
 
-    <section class="catalogue-item">
-      <a class="catalogue-item__link" href="#">
+    <article class="catalogue-item">
+      <a class="catalogue-item__link" href="basket.html">
         <picture>
           <source class="catalogue-item__img" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 1150px)">
           <source class="catalogue-item__img" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="catalogue-item__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="Изображение корзины для игрушек"> <!-- Тянется, размеры можно не задавать (Д1) -->
+          <img class="catalogue-item__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="Изображение корзины для игрушек">
+          <!-- Для адаптивных изображений, у которых есть версии с разными размерами и пропоциями (например, заданы через тег sources в элементе picture), размеры в img в HTML можно не задавать -->
         </picture>
-        <h2 class="catalogue-item__title">Корзинка для белья</h2>
+        <h1 class="catalogue-item__title">Корзинка для белья</h1>
       </a>
       <div class="container">
-        <div class="catalogue-item__substrate"></div>
         <p class="catalogue-item__product-desc">Диаметр 15 см, высота 10 см</p>
         <footer class="catalogue-item__desc-footer">
           <p class="catalogue-item__product-price">690 руб.</p>
-          <a class="catalogue-item__buy-btn">
+          <a class="catalogue-item__buy-btn catalogue-item__buy-btn--basket" href="#">
             <svg class="catalogue-item__btn" width="22" height="18">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </a>
         </footer>
       </div>
-    </section>
+    </article>
 
-    <section class="catalogue-item">
-      <a class="catalogue-item__link" href="#">
+    <article class="catalogue-item">
+      <a class="catalogue-item__link" href="baskettoys.html">
         <picture>
           <source class="catalogue-item__img" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 1150px)">
           <source class="catalogue-item__img" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="catalogue-item__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="Изображение корзины для игрушек"> <!-- Тянется, размеры можно не задавать (Д1) -->
+          <img class="catalogue-item__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="Изображение корзины для игрушек">
+          <!-- Для адаптивных изображений, у которых есть версии с разными размерами и пропоциями (например, заданы через тег sources в элементе picture), размеры в img в HTML можно не задавать -->
         </picture>
-        <h2 class="catalogue-item__title">Большая корзинка для игрушек</h2>
+        <h1 class="catalogue-item__title">Большая корзинка для игрушек</h1>
       </a>
       <div class="container">
-        <div class="catalogue-item__substrate"></div>
         <p class="catalogue-item__product-desc">Диаметр 30 см, высота 30 см</p>
         <footer class="catalogue-item__desc-footer">
           <p class="catalogue-item__product-price">1 500 руб.</p>
-          <a class="catalogue-item__buy-btn">
+          <a class="catalogue-item__buy-btn catalogue-item__buy-btn--toy" href="#">
             <svg class="catalogue-item__btn" width="22" height="18">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </a>
         </footer>
       </div>
-    </section>
+    </article>
 
-    <section class="about-manufacture">
-      <h2 class="second-header second-header--camera-logo">Процесс производства</h2>
+    <article class="about-manufacture">
+      <h1 class="about-manufacture__header about-manufacture__header--camera-logo">Процесс производства</h1>
       <video class="about-manufacture__video" width="260" height="150">
         <source src="#" type="video/mp4">
         <source src="#" type="video/ogg">
@@ -192,8 +192,7 @@
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
       <a class="text-btn about-manufacture__btn" href="#">Сделать заказ</a>
-      <div class="about-manufacture__substrate"></div>
-    </section>
+    </article>
   </main>
 
   <footer class="main-footer">

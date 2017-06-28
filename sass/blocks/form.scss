@@ -358,6 +358,7 @@
   font-size: $secondary-font-size;
   font-weight: 700;
   line-height: 18px;
+  color: #000000;
 
   @media #{$tablet-widths} {
     font-size: 19px;
@@ -566,11 +567,11 @@
   }
 
   &--email {
-    top: 52px;
-    right: 34px;
+    top: 46px;
+    right: 27px;
 
-    width: 34px;
-    height: 23px;
+    width: 46px;
+    height: 33px;
 
     background-image: url("../img/icon-mail.svg");
 

@@ -13,9 +13,18 @@
     <script>svg4everybody();</script>
   </head>
   <body>
-    <!-- Страница index.html выдана в размере 1250px -->
-    <!-- Скриншоты: http://www.picshare.ru/view/8153274/, http://www.picshare.ru/view/8153281/ -->
-    <!-- Куратору написал -->
+
+    <!-- Б11 - то ли браузеры не едут, то ли я что-то не понимаю (Chrome, Safari, Mozilla, Vivaldi):
+    http://www.picshare.ru/view/8155507/
+    http://www.picshare.ru/view/8155523/
+    http://www.picshare.ru/view/8155524/
+    http://www.picshare.ru/view/8155525/
+    http://www.picshare.ru/view/8155526/
+    http://www.picshare.ru/view/8155530/
+    http://www.picshare.ru/view/8155667/
+    http://www.picshare.ru/view/8155668/
+    http://www.picshare.ru/view/8155669/ -->
+
     <div class="body-overlay"></div>
     <section class="modal-block">
       <div class="container">
@@ -26,7 +35,7 @@
           <span class="btn modal-block__btn">M</span>
           <span class="btn modal-block__btn">L</span>
         </div>
-        <button class="text-btn modal-block__btn modal-block__btn--mint">Добавить</button>
+        <button class="text-btn modal-block__btn modal-block__btn--mint" type="button">Добавить</button>
       </div>
     </section>
 
@@ -38,7 +47,8 @@
               <picture>
                 <source class="main-header__logo-img" srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
                 <source class="main-header__logo-img" srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-                <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka"> <!-- Тянется, размеры можно не задавать (Д1) -->
+                <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Mishka">
+                <!-- Для адаптивных изображений, у которых есть версии с разными размерами и пропоциями (например, заданы через тег sources в элементе picture), размеры в img в HTML можно не задавать -->
               </picture>
             </a>
             <button class="main-header__toggle" type="button">Открыть меню</button>
@@ -98,9 +108,7 @@
       </nav>
 
       <section class="desc-block">
-        <div class="container">
           <h1 class="first-header">Милые штуки ручной<br> работы для дома</h1>
-        </div>
         <div class="desc-block__container">
           <a class="product-types product-types--mint" href="catalog.html/#">
             <p class="product-types__text product-types__text--lamp">Предметы интерьера</p>
@@ -135,8 +143,11 @@
               15 см</dd>
           </dl>
           <div class="image-block">
-            <img class="image-block__img" src="img/triple-set-tablet@1x.jpg" alt="Изображение товара" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" width="333" height="404">
-            <img class="image-block__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" width="260" height="315">
+            <picture>
+              <source class="image-block__img" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+              <source class="image-block__img" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="image-block__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
+            </picture>
             <p class="image-block__img-text">Цена: 990 руб.</p>
           </div>
           <a class="text-btn product-article__btn" href="#">Заказать</a>
@@ -170,7 +181,7 @@
             фотографии сразу стали более стильными, а также набирают больше лайков!
           </blockquote>
           <a class="review-block__author-link" href="#">
-            <cite class="review-block__author-name">Анастасия Красильникова</cite><br>
+            <cite class="review-block__author-name">Анастасия Красильникова</cite>
             <cite class="review-block__author-nick">@misssssiskras</cite>
           </a>
           <div class="review-block__buttons-container">
@@ -198,7 +209,7 @@
           <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1563.6532074125553!2d30.321582624823847!3d59.93654270489199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1498065959551" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="container">
-          <a class="text-btn contacts-block__btn" href="#">Напишите нам</a>
+          <a class="text-btn contacts-block__btn" href="contactus.html">Напишите нам</a>
         </div>
       </section>
     </main>

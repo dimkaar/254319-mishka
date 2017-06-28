@@ -20,33 +20,11 @@
     margin-bottom: 57px;
 
     &:hover {
-      .catalogue-item__substrate {
-        content: "";
-        position: absolute;
-        top: 458px;
-        left: 0;
-        z-index: -5;
-
-        width: 100%;
-        height: 200px;
-
-        box-shadow: 0 5px 10px 5px #e8e8e8;
-      }
+      box-shadow: 0 5px 10px 5px #e8e8e8;
     }
 
     &:active {
-      .catalogue-item__substrate {
-        content: "";
-        position: absolute;
-        top: 460px;
-        left: 0;
-        z-index: -5;
-
-        width: 100%;
-        height: 200px;
-
-        box-shadow: 0 3px 5px 1px #e8e8e8;
-      }
+      box-shadow: 0 3px 5px 1px #e8e8e8;
     }
   }
 
@@ -230,7 +208,7 @@
 .catalogue-item__product-desc {
   margin-top: 0;
   margin-bottom: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   box-sizing: border-box;
 
   font-size: 13px;

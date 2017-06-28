@@ -11,15 +11,6 @@
   @media #{$desktop-widths} {
     padding-top: 104px;
     padding-bottom: 96px;
-
-    background-image: url("../img/triple-set-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 45.5% 81.3%;
-    background-position: 92% 35%;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/triple-set-desktop@2x.jpg");
-    }
   }
 
   @media #{$extended-desktop} {
@@ -56,6 +47,7 @@
     }
 
     @media #{$desktop-widths} {
+      z-index: 1;
       order: 2;
       margin-left: 5.5%;
       margin-bottom: 49px;
