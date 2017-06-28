@@ -181,6 +181,11 @@
 
       .main-header__nav-link {
         font-size: $primary-font-size;
+
+        &--wry-layout {
+          padding-top: 27px;
+          padding-bottom: 36px;
+        }
       }
     }
 
@@ -454,5 +459,29 @@
 
   .first-header {
     margin-bottom: 0;
+
+    &--catalog {
+      @media #{$mobile-widths} {
+        margin-left: 0px;
+      }
+
+      @media #{$tablet-widths} {
+        margin-left: 9px;
+      }
+
+      @media #{$desktop-widths} {
+        margin-left: 3px;
+      }
+    }
+
+    &--form {
+      @media #{$tablet-widths} {
+        margin-top: -2px;
+      }
+
+      @media #{$desktop-widths} {
+        margin-top: 0;
+      }
+    }
   }
 }

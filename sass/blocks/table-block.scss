@@ -5,6 +5,8 @@
   margin-top: 0;
   margin-bottom: 28px;
 
+  line-height: 20px;
+
   @media #{$tablet-widths} {
     margin-bottom: 27px;
   }
@@ -13,8 +15,8 @@
 .table-block__dt,
 .table-block__dd {
   margin-left: 0;
-  padding-top: 3px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 12px;
 
   border-bottom: 1px solid #ececec;
 
@@ -35,7 +37,7 @@
   width: 38%;
 
   @media #{$tablet-widths} {
-    width: 34%;
+    width: 33%;
   }
 }
 
@@ -43,7 +45,7 @@
   width: 62%;
 
   @media #{$tablet-widths} {
-    width: 66%;
+    width: 67%;
   }
 }
 

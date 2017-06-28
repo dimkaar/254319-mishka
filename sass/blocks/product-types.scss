@@ -90,6 +90,13 @@
 
       background-image: url("../img/icon-interior.svg");
     }
+
+    @media #{$tablet-widths} {
+      &::after {
+        top: 28px;
+        right: 36px;
+      }
+    }
   }
 
   &--cube {
@@ -101,6 +108,13 @@
       height: 62px;
 
       background-image: url("../img/icon-toy.svg");
+    }
+
+    @media #{$tablet-widths} {
+      &::after {
+        top: 31px;
+        right: 34px;
+      }
     }
   }
 }

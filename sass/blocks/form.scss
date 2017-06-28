@@ -36,6 +36,10 @@
       padding-bottom: 26px;
     }
 
+    @media #{$desktop-widths} {
+      padding-bottom: 24px;
+    }
+
     .form__header-substrate {
       @media #{$tablet-widths} {
         margin-top: 8px;
@@ -662,6 +666,11 @@
 }
 
 .form__btn {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  line-height: 16px;
+
   background-color: $primary-bg-color;
 
   @media #{$tablet-widths} {

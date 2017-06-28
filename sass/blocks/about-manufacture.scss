@@ -1,7 +1,7 @@
 .about-manufacture {
   position: relative;
 
-  padding-top: 25px;
+  padding-top: 14px;
   padding-bottom: 32px;
   box-sizing: border-box;
 
@@ -27,15 +27,18 @@
   .about-manufacture__header {
     position: relative;
 
+    margin-top: 9px;
     margin-bottom: 23px;
     padding-left: 90px;
 
     font-family: $header-font-family;
     font-size: $secondary-font-size;
     line-height: $tertiary-line-height;
+    color: $header-color;
 
     @media #{$tablet-widths} {
       order: 2;
+      margin-top: 13px;
       margin-bottom: 33px;
       padding-left: 105px;
 
@@ -198,7 +201,7 @@
 .about-manufacture__video-play {
   content: "";
   position: absolute;
-  top: 128px;
+  top: 129px;
   left: 30%;
   z-index: 5;
 
@@ -213,7 +216,7 @@
   border: none;
 
   @media #{$tablet-widths} {
-    top: 183px;
+    top: 189px;
     left: 42.4%;
 
     width: 100px;
@@ -298,12 +301,18 @@
 .about-manufacture__btn {
   width: 74%;
   margin-left: 34px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 16px;
 
   @media #{$tablet-widths} {
     order: 3;
     width: 87.8%;
     margin-left: 40px;
+    padding-top: 16px;
   }
 
   @media #{$desktop-widths} {
