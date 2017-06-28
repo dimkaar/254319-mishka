@@ -82,29 +82,38 @@
 
   &--lamp {
     &::after {
+      top: 21px;
+      right: 37px;
+
+      width: 40px;
+      height: 66px;
 
       background-image: url("../img/icon-interior.svg");
+    }
 
-      @media #{$mobile-widths} {
-        top: 21px;
-        right: 37px;
-
-        width: 40px;
-        height: 66px;
+    @media #{$tablet-widths} {
+      &::after {
+        top: 28px;
+        right: 36px;
       }
     }
   }
 
   &--cube {
     &::after {
+      top: 20px;
+      right: 27px;
+
+      width: 60px;
+      height: 62px;
+
       background-image: url("../img/icon-toy.svg");
+    }
 
-      @media #{$mobile-widths} {
-        top: 20px;
-        right: 27px;
-
-        width: 60px;
-        height: 62px;
+    @media #{$tablet-widths} {
+      &::after {
+        top: 31px;
+        right: 34px;
       }
     }
   }
