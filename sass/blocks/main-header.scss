@@ -318,7 +318,7 @@
     @media #{$tablet-widths} {
       padding-left: 0;
       padding-top: 32px;
-      padding-bottom: 31px;
+      padding-bottom: 32px;
 
       text-indent: 200%;
       white-space: nowrap;
@@ -343,16 +343,14 @@
 
     @media #{$tablet-widths} {
       padding-left: 31%;
-      padding-top: 29px;
-      padding-bottom: 31px;
+      padding-top: 31px;
+      padding-bottom: 33px;
 
       border-left: 1px solid #ececec;
     }
 
     @media #{$desktop-widths} {
       padding-left: 30%;
-      padding-top: 30px;
-      padding-bottom: 33px;
     }
 
     @media #{$extended-desktop} {
