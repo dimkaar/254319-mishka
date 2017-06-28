@@ -183,8 +183,10 @@
         font-size: $primary-font-size;
 
         &--wry-layout {
-          padding-top: 27px;
-          padding-bottom: 36px;
+          @media #{$desktop-widths} {
+            padding-top: 27px;
+            padding-bottom: 36px;
+          }
         }
       }
     }
